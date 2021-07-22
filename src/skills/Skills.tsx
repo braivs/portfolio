@@ -12,8 +12,8 @@ export function Skills() {
           <Skill title={'React'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, obcaecati?'}/>
           <Skill title={'Redux'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolorem, dolores fuga nesciunt ratione voluptates.'}/>
           <Skill title={'JS'} description={'Lorem ipsum dolor sit amet.'}/>
-          {/*<Skill title={'HTML'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.'}/>
-          <Skill title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, inventore tempora.'}/>*/}
+          <Skill title={'HTML'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.'}/>
+          <Skill title={'CSS'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, inventore tempora.'}/>
         </div>
       </div>
     </div>
