@@ -1,0 +1,28 @@
+.project {
+  width: 350px;
+  background-color: #ffffa9;
+
+  .picture {
+    position: relative;
+    width: 350px;
+    height: 350px;
+
+    .tempText {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .button {
+      background-color: #63db47;
+      width: 150px;
+      height: 50px;
+      font-weight: bold;
+    }
+  }
+
+  .titleAndDescription {
+    padding: 20px;
+    background-color: red;
+  }
+}

@@ -1,0 +1,41 @@
+.container {
+  border: 1px solid;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.containerColumn {
+  flex-direction: column;
+  /*justify-content: flex-end;*/
+}
+
+.block {
+  min-height: 100vh;
+}
+
+.elements {
+  border: 1px solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
