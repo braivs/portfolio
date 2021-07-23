@@ -16,7 +16,7 @@ export function Footer() {
           <FooterContactItem/>
           <FooterContactItem/>
         </div>
-        <p className={s.Copyright}>© 2021 Site created by Briws</p>
+        <p className={s.copyright}>© 2021 Site created by Briws</p>
       </div>
     </div>
   );
