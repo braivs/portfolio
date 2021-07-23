@@ -1,11 +1,15 @@
 .project {
-  width: 350px;
+  width: 280px;
   background-color: #ffffa9;
 
   .picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 280px;
+    height: 330px;
+    background-color: #63db47;
 
     .tempText {
       position: absolute;
@@ -14,15 +18,22 @@
     }
 
     .button {
-      background-color: #63db47;
+      background-color: #446e35;
       width: 150px;
       height: 50px;
       font-weight: bold;
+      border: none;
     }
   }
 
   .titleAndDescription {
-    padding: 20px;
-    background-color: red;
+    background-color: #918124;
+    .description,
+    .title {
+      margin: 5px;
+      display: inline-block;
+      background-color: #9afd59;
+
+    }
   }
 }

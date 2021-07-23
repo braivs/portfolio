@@ -1,0 +1,21 @@
+.footerBlock {
+  background-color: gold;
+  padding: 40px 0;
+
+  .footerTitle {
+    background-color: #ee783f;
+  }
+
+  .contacts {
+    width: 280px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Copyright {
+    margin-top: 20px;
+    background-color: #ee783f;
+  }
+}

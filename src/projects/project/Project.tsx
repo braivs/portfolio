@@ -10,17 +10,17 @@ type ProjectPropsType = {
 export function Project(props: ProjectPropsType) {
   return (
     <div className={`${sContainers.element} ${s.project}`}>
-      <div className={`${s.picture} ${sContainers.flexCenter}`}>
+      <div className={s.picture}>
         <span className={s.tempText}>
           Picture
         </span>
-        <div className={`${s.button} ${sContainers.flexCenter}`}>
+        <button className={s.button}>
           Watch
-        </div>
+        </button>
       </div>
       <div className={s.titleAndDescription}>
-        <div>{props.title}</div>
-        <div>{props.description}</div>
+        <div className={s.title}>{props.title}</div><br/>
+        <div className={s.description}>{props.description}</div>
       </div>
 
     </div>
