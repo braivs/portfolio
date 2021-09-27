@@ -1,5 +1,4 @@
 .project {
-  width: 280px;
   background-color: #ffffa9;
 
   .picture {
@@ -7,8 +6,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 280px;
-    height: 330px;
+    min-width: 450px;
+    height: 300px;
     background-color: #63db47;
 
     .tempText {

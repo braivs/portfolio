@@ -1,8 +1,21 @@
 .projectsBlock {
-  background-color: #cfcc59;
+  background-color: #F8F9FA;
 
   .title {
-    background-color: #9afd59;
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 48px;
+      font-weight: 600;
+      font-size: 40px;
+      color: #212529;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1129px) {
+  .projects {
+    justify-content: center;
   }
 }
 

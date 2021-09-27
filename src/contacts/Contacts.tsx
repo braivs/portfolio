@@ -5,15 +5,15 @@ import sTitle from '../common/styles/Title.module.css'
 
 export function Contacts() {
   return (
-    <div className={`${sContainers.block} ${s.contactsBlock}`}>
+    <div className={s.contactsBlock}>
       <div className={`${sContainers.container} ${sContainers.containerColumn}`}>
-        <h2 className={sTitle.title}>Contacts</h2>
+        <h2 className={`${sTitle.title} ${s.contactsTitle}`}>Contacts</h2>
         <form>
-          <div><input/></div>
-          <div><input/></div>
-          <div><textarea /></div>
+          <input type={'text'}/>
+          <input type={'text'}/>
+          <textarea />
         </form>
-        <button className={s.button}>Send</button>
+        <button type={'submit'} className={s.button}>Send</button>
 
       </div>
     </div>
