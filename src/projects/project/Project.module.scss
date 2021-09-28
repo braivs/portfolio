@@ -1,38 +1,65 @@
+@import '../../common/styles/sass/variables';
+
 .project {
-  background-color: #ffffa9;
-
-  .picture {
+    width: 450px;
+    //background-color: $bgSecondColor;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    min-width: 450px;
-    height: 300px;
-    background-color: #63db47;
+    flex-direction: column;
 
-    .tempText {
-      position: absolute;
-      top: 20px;
-      left: 20px;
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        background-color: #63db47;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.4;
+        }
+
+        .viewBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background-color: #f5df4e;
+            width: 83px;
+            height: 40px;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: .25rem;
+            color: black;
+            position: relative;
+            //z-index: 1;
+        }
     }
 
-    .button {
-      background-color: #446e35;
-      width: 150px;
-      height: 50px;
-      font-weight: bold;
-      border: none;
-    }
-  }
+    .projectInfo {
+        padding: 2.25rem 1.25rem;
 
-  .titleAndDescription {
-    background-color: #918124;
-    .description,
-    .title {
-      margin: 5px;
-      display: inline-block;
-      background-color: #9afd59;
+        .projectTitle {
+            font-size: 18px;
+            font-weight: 600;
+            //font-family: 'Poppins', sans-serif;
+            //padding: 1.25rem 1.25rem 1.25rem 2.25rem;
+        }
 
+        .description {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.8;
+            //font-family: 'Poppins', sans-serif;
+            //padding: 0 0 1rem 2.25rem;;
+        }
     }
-  }
 }

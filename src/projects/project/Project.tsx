@@ -1,27 +1,25 @@
 import React from 'react';
 import s from './Project.module.scss';
-import sContainers from '../../common/styles/Containers.module.css'
 
 type ProjectPropsType = {
   title: string
   description: string
+  link: string
+  style: React.CSSProperties
 }
 
 export function Project(props: ProjectPropsType) {
   return (
-    <div className={`${sContainers.element} ${s.project}`}>
-      <div className={s.picture}>
-        <span className={s.tempText}>
-          Picture
-        </span>
-        <button className={s.button}>
-          Watch
-        </button>
+    <div className={s.project}>
+      <div className={s.image} style={props.style}>
+        <a className={s.viewBtn} href={props.link}>Watch</a>
       </div>
-      <div className={s.titleAndDescription}>
-        <div className={s.title}>{props.title}</div><br/>
+      <div className={s.projectInfo}>
+        <h3 className={s.projectTitle}>{props.title}</h3><br/>
         <div className={s.description}>{props.description}</div>
       </div>
+
+
 
     </div>
   );

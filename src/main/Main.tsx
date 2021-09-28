@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss';
-import photo from '../assets/images/myPhoto.jpg'
+import photo from '../assets/image/myPhoto.jpg'
 import sContainer from '../common/styles/Containers.module.css'
 
 export function Main() {
