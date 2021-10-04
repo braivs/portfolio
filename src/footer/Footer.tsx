@@ -1,6 +1,6 @@
 import React from 'react';
 import sContainers from '../common/styles/Containers.module.css'
-import sTitle from '../common/styles/Title.module.css'
+import sTitle from '../common/components/title/Title.module.css'
 import s from './Footer.module.scss'
 import {FooterContactItem} from "./FooterContactItem/FooterContactItem";
 

@@ -1,4 +1,5 @@
 @import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 .project {
     width: 450px;
@@ -11,7 +12,7 @@
         align-items: center;
         justify-content: center;
         height: 300px;
-        background-color: #63db47;
+        background-color: $bgColor;
         background-size: cover;
         background-repeat: no-repeat;
         /* background-position: center; */
@@ -19,7 +20,7 @@
         &::before {
             position: absolute;
             content: '';
-            background-color: black;
+            background-color: #212529;
             top: 0;
             bottom: 0;
             left: 0;
@@ -32,13 +33,13 @@
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            background-color: #f5df4e;
+            background-color: $primaryColor;
             width: 83px;
             height: 40px;
             font-weight: 600;
             font-size: 16px;
             border-radius: .25rem;
-            color: black;
+            color: $textColor;
             position: relative;
             //z-index: 1;
         }
@@ -48,17 +49,13 @@
         padding: 2.25rem 1.25rem;
 
         .projectTitle {
-            font-size: 18px;
-            font-weight: 600;
-            //font-family: 'Poppins', sans-serif;
+            @include text($titleFontFamily, 18px, 1.8);
             //padding: 1.25rem 1.25rem 1.25rem 2.25rem;
         }
 
         .description {
-            font-size: 16px;
+            @include text($TextFontFamily, 16px, 1.8);
             font-weight: 300;
-            line-height: 1.8;
-            //font-family: 'Poppins', sans-serif;
             //padding: 0 0 1rem 2.25rem;;
         }
     }
