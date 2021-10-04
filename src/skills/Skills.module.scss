@@ -1,9 +1,17 @@
-.skillsBlock {
-  background-color: #ffffff;
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
-  .title {
-    background-color: yellow;
-  }
+.skillsBlock {
+    @include block($bgSecondColor);
+
+    .skillsContainer {
+        justify-content: center;
+
+        .skills {
+            @include blockInside;
+        }
+    }
+
 }
 
 

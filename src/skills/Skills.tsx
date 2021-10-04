@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skills.module.scss';
-import sContainers from '../common/styles/Containers.module.css'
+import sContainers from '../common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {v1} from "uuid";
 import {Title} from "../common/components/title/Title";
@@ -16,10 +16,10 @@ const skills = [
 export function Skills() {
 
   return (
-    <div className={`${sContainers.block} ${s.skillsBlock}`}>
-      <div className={`${sContainers.container} ${sContainers.containerColumn}`}>
+    <div className={`${s.skillsBlock}`}>
+      <div className={`${sContainers.container} ${s.skillsContainer}`}>
         <Title text={'Skills'}/>
-        <div className={sContainers.elements}>
+        <div className={s.skills}>
           {skills.map(el => <Skill key={el.id} title={el.title} description={el.description} />)}
         </div>
       </div>

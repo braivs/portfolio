@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skill.module.scss';
-import sContainers from '../../common/styles/Containers.module.css'
+import sContainers from '../../common/styles/Container.module.css'
 
 type SkillPropsType = {
   title: string

@@ -1,5 +1,5 @@
 import React from 'react';
-import sContainers from '../common/styles/Containers.module.css'
+import sContainers from '../common/styles/Container.module.css'
 import s from './Projects.module.scss'
 import {v1} from "uuid";
 import {Project} from "./project/Project";
@@ -50,7 +50,8 @@ export function Projects() {
             <div className={`${sContainers.container} ${s.projectsContainer}`}>
                 <Title text={'Projects'}/>
                 <div className={s.projects}>
-                    {projects.map(el => <Project key={el.id} style={el.img} title={el.title} description={el.description} link={el.link}/>)}
+                    {projects.map(el => <Project key={el.id} style={el.img} title={el.title}
+                                                 description={el.description} link={el.link}/>)}
                 </div>
             </div>
         </div>

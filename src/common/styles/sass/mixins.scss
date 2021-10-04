@@ -6,3 +6,16 @@
     line-height: $lineHeight;
     color: $textColor;
 }
+
+@mixin block($backgroundColor) {
+    background-color: $backgroundColor;
+    padding: 104px 0;
+}
+
+@mixin blockInside() {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}

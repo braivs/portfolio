@@ -3,7 +3,6 @@
 
 .project {
     width: 450px;
-    //background-color: $bgSecondColor;
     display: flex;
     flex-direction: column;
 
@@ -15,7 +14,6 @@
         background-color: $bgColor;
         background-size: cover;
         background-repeat: no-repeat;
-        /* background-position: center; */
         position: relative;
         &::before {
             position: absolute;
@@ -50,13 +48,11 @@
 
         .projectTitle {
             @include text($titleFontFamily, 18px, 1.8);
-            //padding: 1.25rem 1.25rem 1.25rem 2.25rem;
         }
 
         .description {
-            @include text($TextFontFamily, 16px, 1.8);
+            @include text($textFontFamily, 16px, 1.8);
             font-weight: 300;
-            //padding: 0 0 1rem 2.25rem;;
         }
     }
 }

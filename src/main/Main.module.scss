@@ -1,16 +1,34 @@
+@import '../common/styles/sass/variables';
+
 .mainBlock {
-  height: 100vh;
-  background-color: #f5df4e;
+    height: 100vh;
+    background-color: $primaryColor;
 
-  .text {
-    width: 330px;
-    background-color: orange;
-  }
+    .text {
+        h1 {
+            font-weight: 300;
+            font-size: 48px;
+        }
 
-  .photo {
-    width: 330px;
-    height: 400px;
-    background-color: orange;
-  }
+        h2 {
+            font-weight: 600;
+            font-size: 104px;
+        }
+
+        p {
+            font-size: 21px;
+        }
+
+
+    }
+
+
+    img {
+        width: 29%;
+        border-radius: 50%;
+        border: 15px solid white;
+        background-color: white;
+    }
+
 
 }
