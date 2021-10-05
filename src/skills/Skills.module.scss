@@ -8,7 +8,7 @@
         justify-content: center;
 
         .skills {
-            @include blockInside;
+            @include blockInside(space-between);
         }
     }
 

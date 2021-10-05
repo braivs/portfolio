@@ -7,16 +7,16 @@ import {FooterContactItem} from "./FooterContactItem/FooterContactItem";
 export function Footer() {
   return (
     <div className={s.footerBlock}>
-      <div className={`${sContainers.container} ${sContainers.containerColumn}`}>
-        <h2 className={`${sTitle.title} ${s.footerTitle}`}>Sergey Ustyugov</h2>
-        <div className={s.contacts}>
+      <div className={sContainers.container}>
+        <p className={s.footerTitle}>2021</p>
+        {/*<div className={s.contacts}>
           <FooterContactItem/>
           <FooterContactItem/>
           <FooterContactItem/>
           <FooterContactItem/>
           <FooterContactItem/>
-        </div>
-        <p className={s.copyright}>© 2021 Site created by Briws</p>
+        </div>*/}
+        <p className={s.copyright}>Site created by Briws</p>
       </div>
     </div>
   );

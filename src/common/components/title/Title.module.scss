@@ -24,3 +24,9 @@
         //margin: 0;
     }
 }
+
+.titleSecondary {
+    &::before {
+        background: $textColor;
+    }
+}

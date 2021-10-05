@@ -1,9 +1,9 @@
 .footerBlock {
   background-color: #111418;
-  padding: 40px 0;
+  padding: 66px 0;
 
   .footerTitle {
-    background-color: #ee783f;
+    color: white;
   }
 
   .contacts {
@@ -11,11 +11,12 @@
     height: 50px;
     border: 1px solid black;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .copyright {
-    margin-top: 20px;
-    background-color: #ee783f;
+    //margin-top: 20px;
+    //background-color: #ee783f;
+    color: white;
   }
 }
