@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skills.module.scss';
-import sContainers from '../common/styles/Container.module.css'
+import sContainers from '../common/styles/Container.module.scss'
 import {Skill} from "./skill/Skill";
 import {v1} from "uuid";
 import {Title} from "../common/components/title/Title";

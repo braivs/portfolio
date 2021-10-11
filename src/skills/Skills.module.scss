@@ -12,6 +12,14 @@
         }
     }
 
+    @media screen and (max-width: $lg) {
+        .skillsContainer {
+            .skills {
+                justify-content: center;
+            }
+        }
+    }
+
 }
 
 

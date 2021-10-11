@@ -1,5 +1,5 @@
 import React from 'react';
-import sContainers from '../common/styles/Container.module.css'
+import sContainers from '../common/styles/Container.module.scss'
 import sTitle from '../common/components/title/Title.module.css'
 import s from './Footer.module.scss'
 import {FooterContactItem} from "./FooterContactItem/FooterContactItem";

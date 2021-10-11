@@ -1,12 +1,18 @@
 import React from "react";
-import s from './ContactItem.module.css'
-import {faTelegram} from "@fortawesome/free-brands-svg-icons";
+import s from './ContactItem.module.scss'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {IconProp} from "@fortawesome/fontawesome-svg-core";
 
-export function ContactItem() {
+type ContactItemPropsType = {
+    icon: IconProp
+    href: string
+    style?: React.CSSProperties
+}
+
+export function ContactItem(props: ContactItemPropsType) {
     return (
-        <div className={s.contactItem}>
-            <FontAwesomeIcon icon={faTelegram}/>
-        </div>
+        <span className={s.contactItem}>
+            <a href={props.href}><FontAwesomeIcon icon={props.icon} className={s.contactStyle}/></a>
+        </span>
     )
 }

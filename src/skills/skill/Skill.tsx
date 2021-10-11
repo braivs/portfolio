@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skill.module.scss';
-import sContainers from '../../common/styles/Container.module.css'
+import sContainers from '../../common/styles/Container.module.scss'
 import imgMonitor from '../../assets/image/monitor.jpg'
 
 type SkillPropsType = {

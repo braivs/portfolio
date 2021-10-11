@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './Contacts.module.scss'
-import sContainers from "../common/styles/Container.module.css";
+import sContainers from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {
     faFacebook,
@@ -11,20 +11,39 @@ import {
     faLinkedinIn,
     faTelegram,
     faVk,
-    faYoutube
+    faYoutube, IconDefinition
 } from "@fortawesome/free-brands-svg-icons";
 import {ContactItem} from "./ContactItem/ContactItem";
+import {IconProp} from "@fortawesome/fontawesome-svg-core";
+import {v1} from "uuid";
+import socialImage from "../assets/image/social-network.jpg";
 
-const constacts = [
-    {icon: 'faTelegram'},
-    {icon: 'faLinkedinIn'},
-    {icon: 'faGithub'},
-    {icon: 'faFacebook'},
-    {icon: 'faVk'},
-    {icon: 'faYoutube'},
-    {icon: 'faInstagram'},
 
+type constactsType = Array<{
+    id: string
+    icon: IconProp
+    href: string
+    hoverColor: string
+}>
+
+const constacts: constactsType = [
+    {id: v1(), icon: faTelegram, href: 'https://t.me/brightwiths', hoverColor: '#23a9ea'},
+    {id: v1(), icon: faLinkedinIn, href: 'https://www.linkedin.com/in/briws/', hoverColor: ''},
+    {id: v1(), icon: faGithub, href: 'https://github.com/brightwiths', hoverColor: ''},
+    {id: v1(), icon: faFacebook, href: 'https://www.facebook.com/brightwiths', hoverColor: ''},
+    {id: v1(), icon: faVk, href: 'https://vk.com/brightwiths', hoverColor: ''},
+    {id: v1(), icon: faYoutube, href: 'https://www.youtube.com/channel/UChsgjWWbhYzEfma5LwgVlPQ', hoverColor: ''},
+    {id: v1(), icon: faInstagram, href: 'https://www.instagram.com/brightwiths/', hoverColor: ''}
 ]
+
+//todo: как прокинуть стиль с hover?
+/*const hoverTelegramColor = {
+    "&:hover": {
+        color: `url(${constacts[0].hoverColor})`,
+    }
+}*/
+
+// const myIcon = faTelegram as IconProp
 
 export function Contacts() {
     return (
@@ -42,14 +61,7 @@ export function Contacts() {
                         <button type={'submit'}>Send <span><FontAwesomeIcon icon={faArrowRight}/></span></button>
                     </form>
                     <div className={s.social}>
-                        <ContactItem />
-                        {/*<span><FontAwesomeIcon icon={faTelegram}/></span>
-                        <span><FontAwesomeIcon icon={faLinkedinIn}/></span>
-                        <span><FontAwesomeIcon icon={faGithub}/></span>
-                        <span><FontAwesomeIcon icon={faFacebook}/></span>
-                        <span><FontAwesomeIcon icon={faVk}/></span>
-                        <span><FontAwesomeIcon icon={faYoutube}/></span>
-                        <span><FontAwesomeIcon icon={faInstagram}/></span>*/}
+                        {constacts.map(el => <ContactItem icon={el.icon} href={el.href}/>)}
                     </div>
                 </div>
             </div>

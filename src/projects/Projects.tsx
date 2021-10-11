@@ -1,5 +1,5 @@
 import React from 'react';
-import sContainers from '../common/styles/Container.module.css'
+import sContainers from '../common/styles/Container.module.scss'
 import s from './Projects.module.scss'
 import {v1} from "uuid";
 import {Project} from "./project/Project";
