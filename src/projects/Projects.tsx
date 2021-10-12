@@ -46,7 +46,7 @@ const projects = [
 
 export function Projects() {
     return (
-        <div className={s.projectsBlock}>
+        <div className={s.projectsBlock} id={'projects'}>
             <div className={`${sContainers.container} ${s.projectsContainer}`}>
                 <Title text={'Projects'}/>
                 <div className={s.projects}>

@@ -1,13 +1,14 @@
 import React from 'react';
 import s from './Nav.module.scss';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export function Nav() {
   return (
-    <div className={s.nav}>
-      <a href="">Main</a>
-      <a href="">Skills</a>
-      <a href="">Projects</a>
-      <a href="">Contacts</a>
+    <div className={s.nav} id={'main'}>
+      <AnchorLink href="#main">Main</AnchorLink>
+      <AnchorLink href='#skills'>Skills</AnchorLink>
+      <AnchorLink href="#projects">Projects</AnchorLink>
+      <AnchorLink href="#contacts">Contacts</AnchorLink>
     </div>
   );
 }

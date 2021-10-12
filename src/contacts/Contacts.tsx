@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './Contacts.module.scss'
 import sContainers from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
@@ -37,16 +37,6 @@ const constacts: constactsType = [
     {id: v1(), icon: faYoutube, href: 'https://www.youtube.com/channel/UChsgjWWbhYzEfma5LwgVlPQ', hoverColor: ''},
     {id: v1(), icon: faInstagram, href: 'https://www.instagram.com/brightwiths/', hoverColor: ''}
 ]
-
-//todo: как прокинуть стиль с hover?
-/*const hoverTelegramColor = {
-    "&:hover": {
-        color: `url(${constacts[0].hoverColor})`,
-    }
-}*/
-
-// const myIcon = faTelegram as IconProp
-
 
 export function Contacts() {
     type FormikErrorType = {
@@ -89,17 +79,20 @@ export function Contacts() {
         },
     })
 
-    function SendEmail(object: {user_name: string, user_email: string, message: string}) {
-        emailjs.send("gmail", "contact_form", object,"user_iVELjxR7TwQRSAYW1Jeft" )
+    function SendEmail(object: { user_name: string, user_email: string, message: string }) {
+        emailjs.send("gmail", "contact_form", object, "user_iVELjxR7TwQRSAYW1Jeft")
             .then((result) => {
                 console.log(result.text)
             }, (error) => {
                 console.log(error.text)
             })
     }
-
+    const [colorId, setColorId] = useState('')
+    const hoverTelegramColor = {
+        color: `#23a9ea`
+    }
     return (
-        <div className={s.contactsBlock}>
+        <div className={s.contactsBlock} id={'contacts'}>
             <div className={`${sContainers.container} ${s.contactContainer}`}>
                 <Title text={'Contacts'} view={"inverse"}/>
                 <div className={s.contacts}>
@@ -128,7 +121,14 @@ export function Contacts() {
                         <button type={'submit'}>Send <span><FontAwesomeIcon icon={faArrowRight}/></span></button>
                     </form>
                     <div className={s.social}>
-                        {constacts.map(el => <ContactItem icon={el.icon} href={el.href}/>)}
+                        {constacts.map(el => <ContactItem
+                            key={el.id}
+                            icon={el.icon}
+                            id={el.id}
+                            href={el.href}
+                            colorId={colorId}
+                            setColorId={setColorId}
+                            style={hoverTelegramColor}/>)}
                     </div>
                 </div>
             </div>

@@ -2,23 +2,14 @@
   background-color: #111418;
   padding: 66px 0;
 
-  .footerTitle {
-    color: white;
-  }
-
-  .contacts {
-    width: 280px;
-    height: 50px;
-    border: 1px solid black;
-    display: flex;
+  .footerContainer {
     justify-content: center;
+    p {
+      color: white;
+    }
   }
 
-  .copyright {
-    //margin-top: 20px;
-    //background-color: #ee783f;
-    color: white;
-  }
+
 
   //todo: footer text collapse and -600px
 }
