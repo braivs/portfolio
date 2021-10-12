@@ -18,6 +18,7 @@ import {IconProp} from "@fortawesome/fontawesome-svg-core";
 import {v1} from "uuid";
 import socialImage from "../assets/image/social-network.jpg";
 import {useFormik} from "formik";
+import emailjs from 'emailjs-com';
 
 
 type constactsType = Array<{
@@ -49,27 +50,27 @@ const constacts: constactsType = [
 
 export function Contacts() {
     type FormikErrorType = {
-        name?: string
-        email?: string
+        user_name?: string
+        user_email?: string
         message?: string
     }
 
     const formik = useFormik({
         initialValues: {
-            name: '',
-            email: '',
+            user_name: '',
+            user_email: '',
             message: ''
         },
         validate: (values) => {
             const errors: FormikErrorType = {};
-            if (!values.name) {
-                errors.name = 'Required';
+            if (!values.user_name) {
+                errors.user_name = 'Required';
             }
 
-            if (!values.email) {
-                errors.email = 'Required';
-            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-                errors.email = 'Invalid email address';
+            if (!values.user_email) {
+                errors.user_email = 'Required';
+            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.user_email)) {
+                errors.user_email = 'Invalid email address';
             }
 
             if (!values.message) {
@@ -82,30 +83,41 @@ export function Contacts() {
         },
 
         onSubmit: values => {
-            alert(JSON.stringify(values));
+            // alert(JSON.stringify(values));
+            SendEmail(values)
             formik.resetForm();
         },
     })
+
+    function SendEmail(object: {user_name: string, user_email: string, message: string}) {
+        emailjs.send("gmail", "contact_form", object,"user_iVELjxR7TwQRSAYW1Jeft" )
+            .then((result) => {
+                console.log(result.text)
+            }, (error) => {
+                console.log(error.text)
+            })
+    }
+
     return (
         <div className={s.contactsBlock}>
             <div className={`${sContainers.container} ${s.contactContainer}`}>
                 <Title text={'Contacts'} view={"inverse"}/>
                 <div className={s.contacts}>
                     <form onSubmit={formik.handleSubmit}>
-                        <label htmlFor='name'>What is Your Name:</label>
+                        <label htmlFor='user_name'>What is Your Name:</label>
                         <input
                             type={'text'}
-                            id={'name'}
-                            {...formik.getFieldProps('name')}
+                            id={'user_name'}
+                            {...formik.getFieldProps('user_name')}
                         />
-                        {formik.errors.name ? <div style={{color: 'red'}}>{formik.errors.name}</div> : null}
-                        <label htmlFor='email'>Your Email Address:</label>
+                        {formik.errors.user_name ? <div style={{color: 'red'}}>{formik.errors.user_name}</div> : null}
+                        <label htmlFor='user_email'>Your Email Address:</label>
                         <input
                             type={'text'}
-                            id={'email'}
-                            {...formik.getFieldProps('email')}
+                            id={'user_email'}
+                            {...formik.getFieldProps('user_email')}
                         />
-                        {formik.errors.email ? <div style={{color: 'red'}}>{formik.errors.email}</div> : null}
+                        {formik.errors.user_email ? <div style={{color: 'red'}}>{formik.errors.user_email}</div> : null}
                         <label htmlFor='message'>How can I Help you?:</label>
                         <textarea
                             id={'message'}

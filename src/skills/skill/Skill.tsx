@@ -5,13 +5,14 @@ import imgMonitor from '../../assets/image/monitor.jpg'
 
 type SkillPropsType = {
     title: string
+    logo: string
     description: string
 }
 
 export function Skill(props: SkillPropsType) {
     return (
         <div className={`${sContainers.element} ${s.skill}`}>
-            <img src={imgMonitor} alt="imgMonitor"/>
+            <img src={props.logo} alt="imgMonitor"/>
             <h3>{props.title}</h3>
             <p>{props.description}</p>
         </div>
