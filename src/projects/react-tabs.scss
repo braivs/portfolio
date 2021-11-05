@@ -1,0 +1,27 @@
+@import '../common/styles/sass/variables';
+
+.react-tabs {
+
+    &__tab-list {
+        display: flex;
+        padding-bottom: 36px;
+    }
+
+    &__tab {
+        list-style: none;
+        padding: 0 15px 5px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+
+        &--selected {
+            border-color: $primaryColor;
+            border-bottom: 3px solid $primaryColor;
+            color: $textColor;
+        }
+
+        &:hover {
+            color: $textColor;
+        }
+    }
+}

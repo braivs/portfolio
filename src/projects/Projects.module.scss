@@ -12,6 +12,29 @@
             @media screen and (max-width: 1129px) {
                 justify-content: center;
             }
+
+            .tabs {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                cursor: pointer;
+
+                .tabsContent {
+                    width: 100%;
+                    flex-wrap: wrap;
+
+                    .tabElement {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        @media screen and (max-width: 1145px) {
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
         }
     }
 
