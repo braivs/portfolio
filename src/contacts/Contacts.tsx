@@ -57,7 +57,6 @@ export function Contacts() {
             if (!values.user_name) {
                 errors.user_name = 'Required';
             }
-
             if (!values.user_email) {
                 errors.user_email = 'Required';
             } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.user_email)) {
@@ -74,7 +73,6 @@ export function Contacts() {
         },
 
         onSubmit: values => {
-            // alert(JSON.stringify(values));
             SendEmail(values)
             formik.resetForm();
         },
@@ -101,21 +99,27 @@ export function Contacts() {
                             id={'user_name'}
                             {...formik.getFieldProps('user_name')}
                         />
-                        {formik.errors.user_name ? <div style={{color: 'red'}}>{formik.errors.user_name}</div> : null}
+                        {formik.touched.user_name && formik.errors.user_name
+                            ? <div style={{color: 'red'}}>{formik.errors.user_name}</div>
+                            : null}
                         <label htmlFor='user_email'>Your Email Address:</label>
                         <input
                             type={'text'}
                             id={'user_email'}
                             {...formik.getFieldProps('user_email')}
                         />
-                        {formik.errors.user_email ? <div style={{color: 'red'}}>{formik.errors.user_email}</div> : null}
+                        {formik.touched.user_email && formik.errors.user_email
+                            ? <div style={{color: 'red'}}>{formik.errors.user_email}</div>
+                            : null}
                         <label htmlFor='message'>How can I Help you?:</label>
                         <textarea
                             id={'message'}
                             rows={4}
                             {...formik.getFieldProps('message')}
                         />
-                        {formik.errors.message ? <div style={{color: 'red'}}>{formik.errors.message}</div> : null}
+                        {formik.touched.message && formik.errors.message
+                            ? <div style={{color: 'red'}}>{formik.errors.message}</div>
+                            : null}
                         <button type={'submit'}>Send <span><FontAwesomeIcon icon={faArrowRight}/></span></button>
                     </form>
                     <div className={s.social}>
