@@ -22,7 +22,7 @@ import './react-tabs.scss';
 const projectsSPA = [
     {
         id: v1(),
-        title: 'Social Network',
+        title: 'BrightNet',
         description: 'Social network for samurais.',
         link: 'https://brightwiths.github.io/iti_social_network/',
         img: {backgroundImage: `url(${socialImage})`}

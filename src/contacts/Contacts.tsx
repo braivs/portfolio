@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './Contacts.module.scss'
 import sContainers from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
@@ -11,12 +11,11 @@ import {
     faLinkedinIn,
     faTelegram,
     faVk,
-    faYoutube, IconDefinition
+    faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import {ContactItem} from "./ContactItem/ContactItem";
 import {IconProp} from "@fortawesome/fontawesome-svg-core";
 import {v1} from "uuid";
-import socialImage from "../assets/image/social-network.jpg";
 import {useFormik} from "formik";
 import emailjs from 'emailjs-com';
 
