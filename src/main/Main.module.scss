@@ -3,8 +3,25 @@
 .mainBlock {
     height: 100vh;
     background-color: $primaryColor;
+    display: flex;
+    position: relative;
+
+    .particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.5;
+
+        canvas {
+            position: absolute !important;
+
+        }
+    }
 
     .text {
+        z-index: 1;
         h1 {
             font-weight: 300;
             font-size: 48px;
@@ -28,6 +45,7 @@
         border-radius: 50%;
         border: 15px solid white;
         background-color: white;
+        z-index: 1;
     }
 
     @media screen and (max-width: $xl) {
