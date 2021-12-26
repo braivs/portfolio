@@ -18,6 +18,7 @@ import {IconProp} from "@fortawesome/fontawesome-svg-core";
 import {v1} from "uuid";
 import {useFormik} from "formik";
 import emailjs from 'emailjs-com';
+import {Fade} from "react-awesome-reveal";
 
 
 type constactsType = Array<{
@@ -88,6 +89,7 @@ export function Contacts() {
 
     return (
         <div className={s.contactsBlock} id={'contacts'}>
+            <Fade direction={"left"}>
             <div className={`${sContainers.container} ${s.contactContainer}`}>
                 <Title text={'Contacts'} view={"inverse"}/>
                 <div className={s.contacts}>
@@ -131,6 +133,7 @@ export function Contacts() {
                     </div>
                 </div>
             </div>
+            </Fade>
         </div>
     );
 }

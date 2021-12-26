@@ -17,6 +17,7 @@ import CounselImg from './../assets/image/sitesClassic/Counsel.jpg'
 import CooperImg from './../assets/image/sitesClassic/Cooper.jpg'
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import './react-tabs.scss';
+import {Fade} from "react-awesome-reveal";
 
 
 const projectsSPA = [
@@ -112,6 +113,7 @@ const projectsClassic = [
 export function Projects() {
     return (
         <div className={s.projectsBlock} id={'projects'}>
+            <Fade direction={"right"}>
             <div className={`${sContainers.container} ${s.projectsContainer}`}>
                 <Title text={'Projects'}/>
                 <div className={s.projects}>
@@ -136,6 +138,7 @@ export function Projects() {
                 </div>
 
             </div>
+            </Fade>
         </div>
 
     );

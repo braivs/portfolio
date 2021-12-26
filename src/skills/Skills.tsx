@@ -10,6 +10,7 @@ import logoJS from '../assets/image/logos/prog-js01_icon-icons.png'
 import logoTS from '../assets/image/logos/icons8-typescript-100.png'
 import logoHTML from '../assets/image/logos/social_html5_html_71.png'
 import logoCSS from '../assets/image/logos/css3-01_icon-icons.png'
+import {Fade} from "react-awesome-reveal";
 
 
 const skills = [
@@ -25,12 +26,14 @@ export function Skills() {
 
   return (
     <div className={`${s.skillsBlock}`} id={'skills'}>
+      <Fade direction={"left"}>
       <div className={`${sContainers.container} ${s.skillsContainer}`}>
         <Title text={'Skills'}/>
         <div className={s.skills}>
           {skills.map(el => <Skill key={el.id} title={el.title} logo={el.logo} description={el.description} />)}
         </div>
       </div>
+      </Fade>
     </div>
   );
 }

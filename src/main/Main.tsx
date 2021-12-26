@@ -3,15 +3,13 @@ import s from './Main.module.scss';
 import photo from '../assets/image/myPhoto.jpg'
 import sContainer from '../common/styles/Container.module.scss'
 import Particles from "react-tsparticles";
+import ReactTypingEffect from "react-typing-effect";
+import Tilt from 'react-parallax-tilt';
 
 
 export function Main() {
     const particleOptions = {
-
-        // fullScreen: { enable: false },
-
         particles: {
-            // fullScreen: { enable: false },
             number: {
                 value: 150,
                 limit: 300,
@@ -46,16 +44,34 @@ export function Main() {
     } as const;
 
     return (
-        <div className={s.mainBlock}>
+        <div className={s.mainBlock} id={'main'}>
             <Particles id={'tsparticles'} className={s.particles} options={particleOptions}/>
 
             <div className={`${sContainer.container} ${s.myDiv}`}>
                 <div className={s.text}>
-                    <h1>HI, I`M REACT DEVELOPER</h1>
-                    <h2>BRIWS USTYUGOV</h2>
-                    <p>aka Sergey</p>
+                    <h1>
+                        <ReactTypingEffect
+                            text={["HI, I`M REACT DEVELOPER"]}
+                        />
+                    </h1>
+                    <h2>
+                        <ReactTypingEffect
+                            text={["BRIWS USTYUGOV"]}
+                        />
+                    </h2>
+                    <p>
+                        <ReactTypingEffect
+                            text={["aka Sergey"]}
+                        />
+                    </p>
                 </div>
-                <img src={photo} alt="myPhoto"/>
+
+                <img src={photo} alt="myPhoto" className={s.img}/>
+                {/*<Tilt>
+                    <div style={{ height: '300px', backgroundColor: 'darkgreen' }}>
+                        <h1>React Parallax Tilt 👀</h1>
+                    </div>
+                </Tilt>*/}
             </div>
         </div>
     );

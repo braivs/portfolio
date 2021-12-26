@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export function Nav() {
   return (
-    <div className={s.nav} id={'main'}>
+    <div className={s.nav}>
       <AnchorLink href="#main">Main</AnchorLink>
       <AnchorLink href='#skills'>Skills</AnchorLink>
       <AnchorLink href="#projects">Projects</AnchorLink>
