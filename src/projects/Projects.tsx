@@ -8,7 +8,7 @@ import socialImage from './../assets/image/sitesSPA/social-network.jpg'
 import counterImage from './../assets/image/sitesSPA/counter.jpg'
 import namazonImage from './../assets/image/sitesClassic/namazon.jpg'
 import djStoreImg from './../assets/image/sitesClassic/djStore.jpg'
-import GoaExcursionsImg from  './../assets/image/sitesClassic/GoaExcursions.jpg'
+import GoaExcursionsImg from './../assets/image/sitesClassic/GoaExcursions.jpg'
 import AccessBarsImg from './../assets/image/sitesClassic/AccessBar.jpg'
 import carsBodyPartsImg from './../assets/image/sitesClassic/carsBodyParts.jpg'
 import BlitzImg from './../assets/image/sitesClassic/Blitz.jpg'
@@ -113,29 +113,29 @@ export function Projects() {
     return (
         <div className={s.projectsBlock} id={'projects'}>
             <Fade direction={"right"}>
-            <div className={s.projectsContainer}>
-                <Title text={'Projects'}/>
-                <div className={s.projects}>
+                <div className={s.projectsContainer}>
+                    <Title text={'Projects'}/>
+                    <div className={s.projects}>
 
-                    <Tabs className={s.tabs}>
-                        <TabList>
-                            <Tab>SPA</Tab>
-                            <Tab>Classic</Tab>
-                        </TabList>
-                        <div className={s.tabsContent}>
-                            <TabPanel className={s.tabElement}>
-                                {projectsSPA.map(el => <Project key={el.id} style={el.img} title={el.title}
-                                                             description={el.description} link={el.link}/>)}
-                            </TabPanel>
-                            <TabPanel className={s.tabElement}>
-                                {projectsClassic.map(el => <Project key={el.id} style={el.img} title={el.title}
-                                                                description={el.description} link={el.link}/>)}
-                            </TabPanel>
-                        </div>
-                    </Tabs>
+                        <Tabs className={s.tabs}>
+                            <TabList>
+                                <Tab>SPA</Tab>
+                                <Tab>Classic</Tab>
+                            </TabList>
+                            <div className={s.tabsContent}>
+                                <TabPanel className={s.tabElement}>
+                                    {projectsSPA.map(el => <Project key={el.id} style={el.img} title={el.title}
+                                                                    description={el.description} link={el.link}/>)}
+                                </TabPanel>
+                                <TabPanel className={s.tabElement}>
+                                    {projectsClassic.map(el => <Project key={el.id} style={el.img} title={el.title}
+                                                                        description={el.description} link={el.link}/>)}
+                                </TabPanel>
+                            </div>
+                        </Tabs>
+                    </div>
+
                 </div>
-
-            </div>
             </Fade>
         </div>
 

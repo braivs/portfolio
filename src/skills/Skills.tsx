@@ -13,27 +13,48 @@ import {Fade} from "react-awesome-reveal";
 
 
 const skills = [
-  {id: v1(), title: 'React', logo: logoReact, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, obcaecati?'},
-  {id: v1(), title: 'Redux', logo: logoRedux, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolorem, dolores fuga nesciunt ratione voluptates.'},
-  {id: v1(), title: 'JS', logo: logoJS, description: 'Lorem ipsum dolor sit amet.'},
-  {id: v1(), title: 'TS', logo: logoTS, description: 'Lorem ipsum dolor sit amet.'},
-  {id: v1(), title: 'HTML', logo: logoHTML, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.'},
-  {id: v1(), title: 'CSS', logo: logoCSS, description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, inventore tempora.'}
+    {
+        id: v1(),
+        title: 'React',
+        logo: logoReact,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, obcaecati?'
+    },
+    {
+        id: v1(),
+        title: 'Redux',
+        logo: logoRedux,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolorem, dolores fuga nesciunt ratione voluptates.'
+    },
+    {id: v1(), title: 'JS', logo: logoJS, description: 'Lorem ipsum dolor sit amet.'},
+    {id: v1(), title: 'TS', logo: logoTS, description: 'Lorem ipsum dolor sit amet.'},
+    {
+        id: v1(),
+        title: 'HTML',
+        logo: logoHTML,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.'
+    },
+    {
+        id: v1(),
+        title: 'CSS',
+        logo: logoCSS,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, inventore tempora.'
+    }
 ]
 
 export function Skills() {
 
-  return (
-    <div className={`${s.skillsBlock}`} id={'skills'}>
-      <Fade direction={"left"}>
-      <div className={s.skillsContainer}>
-        <Title text={'Skills'}/>
-        <div className={s.skills}>
-          {skills.map(el => <Skill key={el.id} title={el.title} logo={el.logo} description={el.description} />)}
+    return (
+        <div className={s.skillsBlock} id={'skills'}>
+            <Fade direction={"left"}>
+                <div className={s.skillsContainer}>
+                    <Title text={'Skills'}/>
+                    <div className={s.skills}>
+                        {skills.map(el => <Skill key={el.id} title={el.title} logo={el.logo}
+                                                 description={el.description}/>)}
+                    </div>
+                </div>
+            </Fade>
         </div>
-      </div>
-      </Fade>
-    </div>
-  );
+    );
 }
 
