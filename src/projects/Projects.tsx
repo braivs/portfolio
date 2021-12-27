@@ -112,7 +112,7 @@ const projectsClassic = [
 export function Projects() {
     return (
         <div className={s.projectsBlock} id={'projects'}>
-            <Fade direction={"right"}>
+            <Fade>
                 <div className={s.projectsContainer}>
                     <Title text={'Projects'}/>
                     <div className={s.projects}>

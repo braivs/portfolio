@@ -88,7 +88,7 @@ export function Contacts() {
 
     return (
         <div className={s.contactsBlock} id={'contacts'}>
-            <Fade direction={"left"}>
+            <Fade>
             <div className={s.contactContainer}>
                 <Title text={'Contacts'} view={"inverse"}/>
                 <div className={s.contacts}>

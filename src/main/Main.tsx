@@ -3,6 +3,8 @@ import s from './Main.module.scss';
 import photo from '../assets/image/myPhoto.jpg'
 import Particles from "react-tsparticles";
 import ReactTypingEffect from "react-typing-effect";
+import {Fade} from "react-awesome-reveal";
+import Tilt from 'react-parallax-tilt';
 
 export function Main() {
     const particleOptions = {
@@ -44,27 +46,32 @@ export function Main() {
         <div className={s.main} id={'main'}>
             <Particles className={s.particles} options={particleOptions}/>
             <div className={s.mainBlock}>
-                <div className={s.text}>
-                    <h1>
-                        <ReactTypingEffect
-                            text={["HI, I`M REACT DEVELOPER"]}
-                        />
-                    </h1>
-                    <h2>
-                        <ReactTypingEffect
-                            text={["BRIWS USTYUGOV"]}
-                        />
-                    </h2>
-                    <p>
-                        <ReactTypingEffect
-                            text={["aka Sergey"]}
-                        />
-                    </p>
-                </div>
-                <div className={s.imgBlock}>
-                    <img src={photo} alt="myPhoto" className={s.img}/>
+                <Fade>
 
-                </div>
+                    <div className={s.text}>
+                        <h1>
+                            <ReactTypingEffect
+                                text={["HI, I`M REACT DEVELOPER"]}
+                            />
+                        </h1>
+                        <h2>
+                            <ReactTypingEffect
+                                text={["BRIWS USTYUGOV"]}
+                            />
+                        </h2>
+                        <p>
+                            <ReactTypingEffect
+                                text={["aka Sergey"]}
+                            />
+                        </p>
+                    </div>
+                    <Tilt>
+                        <div className={s.imgBlock}>
+                            <img src={photo} alt="myPhoto" className={s.img}/>
+
+                        </div>
+                    </Tilt>
+                </Fade>
             </div>
         </div>
     );
