@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Contacts.module.scss'
-import sContainers from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
@@ -90,7 +89,7 @@ export function Contacts() {
     return (
         <div className={s.contactsBlock} id={'contacts'}>
             <Fade direction={"left"}>
-            <div className={`${sContainers.container} ${s.contactContainer}`}>
+            <div className={s.contactContainer}>
                 <Title text={'Contacts'} view={"inverse"}/>
                 <div className={s.contacts}>
                     <form onSubmit={formik.handleSubmit}>

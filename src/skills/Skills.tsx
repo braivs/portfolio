@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Skills.module.scss';
-import sContainers from '../common/styles/Container.module.scss'
 import {Skill} from "./skill/Skill";
 import {v1} from "uuid";
 import {Title} from "../common/components/title/Title";
@@ -27,7 +26,7 @@ export function Skills() {
   return (
     <div className={`${s.skillsBlock}`} id={'skills'}>
       <Fade direction={"left"}>
-      <div className={`${sContainers.container} ${s.skillsContainer}`}>
+      <div className={s.skillsContainer}>
         <Title text={'Skills'}/>
         <div className={s.skills}>
           {skills.map(el => <Skill key={el.id} title={el.title} logo={el.logo} description={el.description} />)}

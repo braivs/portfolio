@@ -5,6 +5,7 @@
     padding: 66px 0;
 
     .footerContainer {
+        @include container();
         @include flex(row, center, stretch, nowrap);
 
         p {

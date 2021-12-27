@@ -1,5 +1,4 @@
 import React from 'react';
-import sContainers from '../common/styles/Container.module.scss'
 import s from './Projects.module.scss'
 import {v1} from "uuid";
 import {Project} from "./project/Project";
@@ -9,7 +8,7 @@ import socialImage from './../assets/image/sitesSPA/social-network.jpg'
 import counterImage from './../assets/image/sitesSPA/counter.jpg'
 import namazonImage from './../assets/image/sitesClassic/namazon.jpg'
 import djStoreImg from './../assets/image/sitesClassic/djStore.jpg'
-import GoaExcursionsImg from './../assets/image/sitesClassic/GoaExcursions.jpg'
+import GoaExcursionsImg from  './../assets/image/sitesClassic/GoaExcursions.jpg'
 import AccessBarsImg from './../assets/image/sitesClassic/AccessBar.jpg'
 import carsBodyPartsImg from './../assets/image/sitesClassic/carsBodyParts.jpg'
 import BlitzImg from './../assets/image/sitesClassic/Blitz.jpg'
@@ -114,7 +113,7 @@ export function Projects() {
     return (
         <div className={s.projectsBlock} id={'projects'}>
             <Fade direction={"right"}>
-            <div className={`${sContainers.container} ${s.projectsContainer}`}>
+            <div className={s.projectsContainer}>
                 <Title text={'Projects'}/>
                 <div className={s.projects}>
 

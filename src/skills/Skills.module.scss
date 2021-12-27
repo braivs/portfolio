@@ -5,7 +5,8 @@
     @include block($bgSecondColor);
 
     .skillsContainer {
-        justify-content: center;
+        @include container();
+        @include flex(column, center, center, nowrap);
 
         .skills {
             @include blockInside(space-between);
@@ -15,7 +16,7 @@
     @media screen and (max-width: $lg) {
         .skillsContainer {
             .skills {
-                justify-content: center;
+                @include flex(column, center, center, nowrap);
             }
         }
     }

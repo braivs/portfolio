@@ -1,8 +1,7 @@
 @import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
 
-.mainBlock {
-    @include flex(row, flex-end, center, nowrap);
+.main {
     height: 100vh;
     background-color: $primaryColor;
     position: relative;
@@ -20,69 +19,80 @@
         }
     }
 
-    .text {
-        z-index: 1;
-        h1 {
-            font-weight: 300;
-            font-size: 48px;
-        }
+    .mainBlock {
+        @include container();
+        @include flex(row, space-between, center, nowrap);
 
-        h2 {
-            font-weight: 600;
-            font-size: 90px;
-        }
-
-        p {
-            font-size: 21px;
-        }
-
-
-    }
-
-    img {
-        width: 29%;
-        border-radius: 50%;
-        border: 15px solid white;
-        background-color: white;
-        z-index: 1;
-    }
-
-    @media screen and (max-width: $xl) {
         .text {
+            min-width: 50%;
+            z-index: 1;
             h1 {
-                font-size: 38px;
+                font-weight: 300;
+                font-size: 48px;
             }
+
             h2 {
-                font-size: 66px;
+                font-weight: 600;
+                font-size: 90px;
             }
-        }
-    }
-    @media screen and (max-width: $lg) {
-        .text {
-            h1 {
-                font-size: 28px;
-            }
-            h2 {
-                font-size: 50px;
-            }
-        }
-    }
-    @media screen and (max-width: $md) {
-        .text {
-            h1 {
-                font-size: 20px;
-            }
-            h2 {
-                font-size: 35px;
-            }
+
             p {
-                font-size: 18px;
+                font-size: 21px;
+            }
+
+
+        }
+
+        .imgBlock {
+            z-index: 1;
+            img {
+                width: 400px;
+                border-radius: 50%;
+                border: 15px solid white;
+                background-color: white;
+            }
+        }
+
+
+        @media screen and (max-width: $xl) {
+            .text {
+                h1 {
+                    font-size: 38px;
+                }
+                h2 {
+                    font-size: 66px;
+                }
+            }
+        }
+        @media screen and (max-width: $lg) {
+            .text {
+                h1 {
+                    font-size: 28px;
+                }
+                h2 {
+                    font-size: 50px;
+                }
+            }
+        }
+        @media screen and (max-width: $md) {
+            .text {
+                h1 {
+                    font-size: 20px;
+                }
+                h2 {
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+        @media screen and (max-width: $sm) {
+            img {
+                width: 200px;
             }
         }
     }
-    @media screen and (max-width: $sm) {
-        img {
-            width: 200px;
-        }
-    }
+
+
 }

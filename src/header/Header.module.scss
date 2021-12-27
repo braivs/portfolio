@@ -10,6 +10,7 @@
     width: 100%;
 
     .headerContainer {
+        @include container();
         @include flex(row, flex-end, center, nowrap);
     }
 }

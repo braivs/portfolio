@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss';
 import photo from '../assets/image/myPhoto.jpg'
-import sContainer from '../common/styles/Container.module.scss'
 import Particles from "react-tsparticles";
 import ReactTypingEffect from "react-typing-effect";
 
@@ -42,10 +41,9 @@ export function Main() {
     } as const;
 
     return (
-        <div className={s.mainBlock} id={'main'}>
-            <Particles id={'tsparticles'} className={s.particles} options={particleOptions}/>
-
-            <div className={`${sContainer.container} ${s.myDiv}`}>
+        <div className={s.main} id={'main'}>
+            <Particles className={s.particles} options={particleOptions}/>
+            <div className={s.mainBlock}>
                 <div className={s.text}>
                     <h1>
                         <ReactTypingEffect
@@ -63,8 +61,10 @@ export function Main() {
                         />
                     </p>
                 </div>
+                <div className={s.imgBlock}>
+                    <img src={photo} alt="myPhoto" className={s.img}/>
 
-                <img src={photo} alt="myPhoto" className={s.img}/>
+                </div>
             </div>
         </div>
     );

@@ -5,10 +5,11 @@
     @include block($bgColor);
 
     .projectsContainer {
+        @include container();
         @include flex(row, center, stretch, nowrap); /*todo: fix problem here*/
 
         .projects {
-            //@include blockInside(space-between);
+            @include blockInside(space-between);
             @include flex(row, space-between, stretch, nowrap);
             width: 100%;
             margin-top: 30px;

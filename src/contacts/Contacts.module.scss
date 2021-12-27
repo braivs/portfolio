@@ -9,6 +9,7 @@
     }
 
     .contactContainer {
+        @include container();
         @include flex(column, flex-end, center, nowrap);
 
         .contacts {
