@@ -10,5 +10,15 @@
         color: $textColor;
         text-decoration: none;
         font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+
+    }
+    .active {
+        color: white;
     }
 }
