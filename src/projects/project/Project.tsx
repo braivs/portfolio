@@ -11,7 +11,7 @@ type ProjectPropsType = {
 export function Project(props: ProjectPropsType) {
   return (
     <div className={s.project}>
-      <div className={s.image} style={props.style}>
+      <div className={s.image} style={props.style} onClick={() => window.open(props.link, "_blank")}>
         <a className={s.viewBtn} href={props.link}>Watch</a>
       </div>
       <div className={s.projectInfo}>
