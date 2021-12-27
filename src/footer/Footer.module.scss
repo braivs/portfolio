@@ -1,11 +1,14 @@
-.footerBlock {
-  background-color: #111418;
-  padding: 66px 0;
+@import '../common/styles/sass/mixins';
 
-  .footerContainer {
-    justify-content: center;
-    p {
-      color: white;
+.footerBlock {
+    background-color: #111418;
+    padding: 66px 0;
+
+    .footerContainer {
+        @include flex(row, center, stretch, nowrap);
+
+        p {
+            color: white;
+        }
     }
-  }
 }

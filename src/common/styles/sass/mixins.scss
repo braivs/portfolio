@@ -1,10 +1,33 @@
 @import './variables';
 
-@mixin text($fontFamily, $fontSize, $lineHeight)  {
+@mixin text($fontFamily, $fontSize, $lineHeight) {
     font-family: $fontFamily;
     font-size: $fontSize;
     line-height: $lineHeight;
     color: $textColor;
+}
+
+@mixin container() {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-wrap: $wrap;
+    @media screen and (max-width: $sm) {
+        justify-content: center;
+    }
+}
+
+@mixin bgSettings() {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @mixin block($backgroundColor) {
@@ -12,7 +35,7 @@
     padding: 104px 0;
 }
 
-@mixin blockInside($JustifyContent) {
+@mixin blockInside($JustifyContent) { /*todo: maybe delete*/
     width: 100%;
     display: flex;
     justify-content: $JustifyContent;

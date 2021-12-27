@@ -4,8 +4,6 @@ import photo from '../assets/image/myPhoto.jpg'
 import sContainer from '../common/styles/Container.module.scss'
 import Particles from "react-tsparticles";
 import ReactTypingEffect from "react-typing-effect";
-import Tilt from 'react-parallax-tilt';
-
 
 export function Main() {
     const particleOptions = {
@@ -67,11 +65,6 @@ export function Main() {
                 </div>
 
                 <img src={photo} alt="myPhoto" className={s.img}/>
-                {/*<Tilt>
-                    <div style={{ height: '300px', backgroundColor: 'darkgreen' }}>
-                        <h1>React Parallax Tilt 👀</h1>
-                    </div>
-                </Tilt>*/}
             </div>
         </div>
     );

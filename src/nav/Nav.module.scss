@@ -1,12 +1,14 @@
 @import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins';
+
 
 .nav {
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
-  a {
-    color: $textColor;
-    text-decoration: none;
-    font-weight: 600;
-  }
+    width: 300px;
+    @include flex(row, space-between, stretch, nowrap);
+
+    a {
+        color: $textColor;
+        text-decoration: none;
+        font-weight: 600;
+    }
 }

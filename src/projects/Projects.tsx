@@ -133,7 +133,6 @@ export function Projects() {
                                                                 description={el.description} link={el.link}/>)}
                             </TabPanel>
                         </div>
-
                     </Tabs>
                 </div>
 

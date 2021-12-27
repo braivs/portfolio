@@ -1,9 +1,10 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .mainBlock {
+    @include flex(row, flex-end, center, nowrap);
     height: 100vh;
     background-color: $primaryColor;
-    display: flex;
     position: relative;
 
     .particles {
@@ -16,7 +17,6 @@
 
         canvas {
             position: absolute !important;
-
         }
     }
 

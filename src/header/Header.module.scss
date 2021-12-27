@@ -1,18 +1,15 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .header {
+    @include flex(row, flex-end, center, nowrap);
     height: 80px;
     background-color: $primaryColor;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     position: fixed;
     z-index: 2;
     width: 100%;
-    //opacity: 0.85;
-
 
     .headerContainer {
-        justify-content: flex-end;
+        @include flex(row, flex-end, center, nowrap);
     }
 }
