@@ -1,5 +1,5 @@
-@import '../common/styles/sass/variables.scss';
-@import '../common/styles/sass/mixins';
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 
 .nav {
@@ -13,12 +13,16 @@
         cursor: pointer;
 
         &:hover {
-            text-decoration: underline;
+            color: $bgSecondColor;
         }
 
 
     }
     .active {
-        color: white;
+        color: $bgSecondColor;
+    }
+    @media screen and (max-width: 400px) {
+        display: none;
+
     }
 }

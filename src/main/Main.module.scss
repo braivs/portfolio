@@ -83,6 +83,7 @@
             }
         }
         @media screen and (max-width: $sm) {
+            @include flex(column, space-between, center, nowrap);
             img {
                 width: 200px;
             }

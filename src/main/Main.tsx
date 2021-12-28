@@ -43,9 +43,9 @@ export function Main() {
     } as const;
 
     return (
-        <div className={s.main} >
+        <div className={s.main} id={'main'}>
             <Particles className={s.particles} options={particleOptions}/>
-            <div className={s.mainBlock} id={'main'}>
+            <div className={s.mainBlock}>
                 <Fade>
 
                     <div className={s.text}>
