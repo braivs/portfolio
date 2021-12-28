@@ -9,36 +9,37 @@ import logoJS from '../assets/image/logos/prog-js01_icon-icons.png'
 import logoTS from '../assets/image/logos/icons8-typescript-100.png'
 import logoHTML from '../assets/image/logos/social_html5_html_71.png'
 import logoCSS from '../assets/image/logos/css3-01_icon-icons.png'
+import sass from '../assets/image/logos/sass.png'
+import axios from '../assets/image/logos/axios.jpg'
+import restAPI from '../assets/image/logos/rest-api.png'
+import jest from '../assets/image/logos/jest.png'
+import storyBook from '../assets/image/logos/storybook.png'
+import formik from '../assets/image/logos/formik.png'
+import materialUI from '../assets/image/logos/material_ui.png'
+import git from '../assets/image/logos/Git.png'
+import postman from '../assets/image/logos/postman.png'
+import bootstrap from '../assets/image/logos/Bootstrap.png'
 import {Fade} from "react-awesome-reveal";
 
 
 const skills = [
-    {
-        id: v1(),
-        title: 'React',
-        logo: logoReact,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, obcaecati?'
-    },
-    {
-        id: v1(),
-        title: 'Redux',
-        logo: logoRedux,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolorem, dolores fuga nesciunt ratione voluptates.'
-    },
-    {id: v1(), title: 'JS', logo: logoJS, description: 'Lorem ipsum dolor sit amet.'},
-    {id: v1(), title: 'TS', logo: logoTS, description: 'Lorem ipsum dolor sit amet.'},
-    {
-        id: v1(),
-        title: 'HTML',
-        logo: logoHTML,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo.'
-    },
-    {
-        id: v1(),
-        title: 'CSS',
-        logo: logoCSS,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, inventore tempora.'
-    }
+    { id: v1(), title: 'React', logo: logoReact, },
+    { id: v1(), title: 'Redux', logo: logoRedux, },
+    { id: v1(), title: 'TypeScript', logo: logoTS },
+    { id: v1(), title: 'JavaScript', logo: logoJS },
+    { id: v1(), title: 'REST API', logo: restAPI, },
+    { id: v1(), title: 'AXIOS', logo: axios, },
+    { id: v1(), title: 'Unit Tests', logo: jest, },
+    { id: v1(), title: 'StoryBook', logo: storyBook, },
+    { id: v1(), title: 'Formik', logo: formik, },
+    { id: v1(), title: 'Material-UI', logo: materialUI, },
+    { id: v1(), title: 'Git', logo: git, },
+    { id: v1(), title: 'Postman', logo: postman, },
+    { id: v1(), title: 'HTML', logo: logoHTML, },
+    { id: v1(), title: 'CSS',  logo: logoCSS, },
+    { id: v1(), title: 'SASS', logo: sass, },
+    { id: v1(), title: 'Bootstrap', logo: bootstrap, },
+
 ]
 
 export function Skills() {
@@ -49,8 +50,7 @@ export function Skills() {
                 <div className={s.skillsContainer}>
                     <Title text={'Skills'}/>
                     <div className={s.skills}>
-                        {skills.map(el => <Skill key={el.id} title={el.title} logo={el.logo}
-                                                 description={el.description}/>)}
+                        {skills.map(el => <Skill key={el.id} title={el.title} logo={el.logo}/>)}
                     </div>
                 </div>
             </Fade>
