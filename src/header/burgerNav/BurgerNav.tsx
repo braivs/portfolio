@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import s from './BurgerNav.module.scss';
 import {Link} from "react-scroll";
+import {faArrowRight, faBars} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export function BurgerNav() {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
@@ -19,9 +21,7 @@ export function BurgerNav() {
                 <Link activeClass={s.active} to="contacts" spy={true} smooth={true} offset={-80}
                       duration={500}>Contacts</Link>
             </div>
-            <div className={s.burgerBtn} onClick={onBurgerBtnClick}>
-
-            </div>
+                <FontAwesomeIcon icon={faBars} className={s.burgerBtn} onClick={onBurgerBtnClick}/>
         </div>
     );
 }

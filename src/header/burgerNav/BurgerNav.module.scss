@@ -5,6 +5,7 @@
 .burgerNav {
     width: 100%;
     height: 100%;
+    //border: 1px solid blue;
 
     .burgerNavItems {
         position: absolute;
@@ -12,13 +13,12 @@
         right: 0;
         top: 0;
         left: 0;
-        @include flex(column, space-between, center, nowrap);
-        //display: none;
         height: 0;
-        align-items: stretch;
+        @include flex(column, space-between, center, nowrap);
+        height: 0;
         padding: 20px;
         transform: translate(0, -150px);
-        transition: 0.7s;
+        transition: 0.5s;
 
         a {
             color: $textColor;
@@ -39,19 +39,18 @@
 
     }
     .show {
-        @include flex(column, space-between, center, nowrap);
         transform: translate(0, 0);
         height: 150px;
 
     }
 
     .burgerBtn {
-        width: 30px;
-        height: 30px;
-        background-color: $bgSecondColor;
+        @include flex(row, center, center, nowrap);
+        width: 25px;
+        height: 25px;
         position: absolute;
         top: 29px;
-        right: 20px;
+        right: 30px;
     }
 
     @media screen and (min-width: 400px) {

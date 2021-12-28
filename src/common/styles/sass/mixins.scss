@@ -19,9 +19,9 @@
     justify-content: $justifyContent;
     align-items: $alignItems;
     flex-wrap: $wrap;
-    @media screen and (max-width: $sm) {
+    /*@media screen and (max-width: $sm) {
         justify-content: center;
-    }
+    }*/
 }
 
 @mixin bgSettings() {
