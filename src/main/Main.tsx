@@ -44,7 +44,7 @@ export function Main() {
 
     return (
         <div className={s.main} id={'main'}>
-            <Particles className={s.particles} options={particleOptions}/>
+            {/*<Particles className={s.particles} options={particleOptions}/>*/}
             <div className={s.mainBlock}>
                 <Fade>
 
