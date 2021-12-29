@@ -44,14 +44,14 @@
                 }
 
                 button {
+                    font-size: 16px;
+                    font-family: $textFontFamily;
                     cursor: pointer;
                     width: 162px;
                     height: 54px;
                     border: none;
-                    background-color: #212529;
+                    background-color: $textColor;
                     color: white;
-                    font-size: 16px;
-                    font-family: $textFontFamily;
                     margin-top: 24px;
                     transition: all 0.5s ease;
                     span {

@@ -6,10 +6,12 @@
 
     .projectsContainer {
         @include container();
-        @include flex(column, center, center, nowrap); /*todo: fix problem here*/
+        @include flex(column, center, center, nowrap);
 
         .projects {
-            @include blockInside(space-between);
+            @include flex(row, space-between, stretch, nowrap);
+            margin-top: 30px;
+
             @media screen and (max-width: 1129px) {
                 justify-content: center;
             }

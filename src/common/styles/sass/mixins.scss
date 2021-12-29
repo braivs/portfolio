@@ -35,10 +35,3 @@
     padding: 104px 0;
 }
 
-@mixin blockInside($JustifyContent) { /*todo: maybe delete*/
-    width: 100%;
-    display: flex;
-    justify-content: $JustifyContent;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}

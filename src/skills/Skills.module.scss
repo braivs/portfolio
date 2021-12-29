@@ -9,7 +9,8 @@
         @include flex(column, center, center, nowrap);
 
         .skills {
-            @include blockInside(space-between);
+            margin-top: 30px;
+            @include flex(row, space-between, stretch, wrap);
         }
     }
 
