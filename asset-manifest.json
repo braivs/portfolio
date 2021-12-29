@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.66bac7a8.chunk.css",
-    "main.js": "/portfolio/static/js/main.5968b14c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5968b14c.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.11af7a8b.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.11af7a8b.js.map",
-    "static/js/2.8505d8ed.chunk.js": "/portfolio/static/js/2.8505d8ed.chunk.js",
-    "static/js/2.8505d8ed.chunk.js.map": "/portfolio/static/js/2.8505d8ed.chunk.js.map",
-    "static/js/3.a464b0d1.chunk.js": "/portfolio/static/js/3.a464b0d1.chunk.js",
-    "static/js/3.a464b0d1.chunk.js.map": "/portfolio/static/js/3.a464b0d1.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.1d4e7b16.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1d4e7b16.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.ce3a6ad9.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.ce3a6ad9.js.map",
+    "static/js/2.451b3e9f.chunk.js": "/portfolio/static/js/2.451b3e9f.chunk.js",
+    "static/js/2.451b3e9f.chunk.js.map": "/portfolio/static/js/2.451b3e9f.chunk.js.map",
+    "static/js/3.b18e695d.chunk.js": "/portfolio/static/js/3.b18e695d.chunk.js",
+    "static/js/3.b18e695d.chunk.js.map": "/portfolio/static/js/3.b18e695d.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.66bac7a8.chunk.css.map": "/portfolio/static/css/main.66bac7a8.chunk.css.map",
-    "static/js/2.8505d8ed.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8505d8ed.chunk.js.LICENSE.txt",
+    "static/js/2.451b3e9f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.451b3e9f.chunk.js.LICENSE.txt",
     "static/media/AccessBar.d5c888ac.jpg": "/portfolio/static/media/AccessBar.d5c888ac.jpg",
     "static/media/Blitz.60827348.jpg": "/portfolio/static/media/Blitz.60827348.jpg",
     "static/media/Bootstrap.6a77e115.png": "/portfolio/static/media/Bootstrap.6a77e115.png",
@@ -36,9 +36,9 @@
     "static/media/todolist.40f82faa.jpg": "/portfolio/static/media/todolist.40f82faa.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.11af7a8b.js",
-    "static/js/2.8505d8ed.chunk.js",
+    "static/js/runtime-main.ce3a6ad9.js",
+    "static/js/2.451b3e9f.chunk.js",
     "static/css/main.66bac7a8.chunk.css",
-    "static/js/main.5968b14c.chunk.js"
+    "static/js/main.1d4e7b16.chunk.js"
   ]
 }
