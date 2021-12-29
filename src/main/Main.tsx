@@ -38,8 +38,8 @@ export function Main() {
                 }
             },
         },
-        retina_detect: true,
-        fps_limit: 60,
+        /*retina_detect: true,
+        fps_limit: 60,*/
     } as const;
 
     return (
