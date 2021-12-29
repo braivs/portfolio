@@ -3,7 +3,7 @@
 
 
 .nav {
-    width: 300px;
+    width: 400px;
     @include flex(row, space-between, stretch, nowrap);
 
     a {
@@ -11,6 +11,7 @@
         text-decoration: none;
         font-weight: 600;
         cursor: pointer;
+        font-size: 20px;
 
         &:hover {
             color: $bgSecondColor;

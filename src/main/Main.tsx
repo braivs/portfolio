@@ -53,16 +53,19 @@ export function Main() {
                             <ReactTypingEffect
                                 text={["HI, I`M REACT DEVELOPER"]}
                             />
+                            {/*HI, I`M REACT DEVELOPER*/}
                         </h1>
                         <h2>
                             <ReactTypingEffect
                                 text={["BRIWS USTYUGOV"]}
                             />
+                            {/*BRIWS USTYUGOV*/}
                         </h2>
                         <p>
                             <ReactTypingEffect
                                 text={["aka Sergey"]}
                             />
+                            {/*aka Sergey*/}
                         </p>
                     </div>
                     <Tilt>

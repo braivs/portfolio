@@ -21,74 +21,160 @@
         .text {
             min-width: 50%;
             z-index: 1;
+
             h1 {
-                font-weight: 300;
                 font-size: 48px;
+                font-weight: 300;
             }
 
             h2 {
-                font-weight: 600;
                 font-size: 90px;
+                font-weight: 600;
+
+
             }
 
             p {
                 font-size: 21px;
+
             }
-
-
         }
 
         .imgBlock {
             z-index: 1;
+
             img {
-                width: 400px;
+                width: 500px;
                 border-radius: 50%;
                 border: 15px solid white;
                 background-color: white;
+
             }
         }
 
-
-        @media screen and (max-width: $xl) {
-            .text {
-                h1 {
-                    font-size: 38px;
-                }
-                h2 {
-                    font-size: 66px;
-                }
-            }
-        }
-        @media screen and (max-width: $lg) {
-            .text {
-                h1 {
-                    font-size: 28px;
-                }
-                h2 {
-                    font-size: 50px;
-                }
-            }
-        }
-        @media screen and (max-width: $md) {
-            .text {
-                h1 {
-                    font-size: 20px;
-                }
-                h2 {
-                    font-size: 35px;
-                }
-                p {
-                    font-size: 18px;
-                }
-            }
-        }
-        @media screen and (max-width: $sm) {
-            @include flex(column, space-between, center, nowrap);
-            img {
-                width: 200px;
-            }
-        }
     }
 
 
+}
+
+
+@media only screen and (max-width: 1800px) { // 1536px - 1800px
+    .main {
+        .particles {
+        }
+
+        .mainBlock {
+            .text {
+                h1 {
+                    font-size: 45px;
+                }
+
+                h2 {
+                    font-size: 75px;
+                }
+
+                p {
+
+                }
+            }
+
+            .imgBlock {
+                img {
+                    width: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1536px) { // 1200px - 1536px
+    .main {
+        .particles {
+        }
+
+        .mainBlock {
+            .text {
+                h1 {
+                    font-size: 40px;
+                }
+
+                h2 {
+                    font-size: 63px;
+                }
+
+                p {
+
+                }
+            }
+
+            .imgBlock {
+                img {
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) { // 600px - 1200px
+    .main {
+        padding-top: 100px;
+
+        .particles {
+        }
+
+        .mainBlock {
+            @include flex(column, space-around, center, nowrap);
+
+            .text {
+                h1 {
+                    font-size: 30px;
+                }
+
+                h2 {
+                    font-size: 50px;
+                }
+
+                p {
+
+                }
+            }
+
+            .imgBlock {
+                img {
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { // 350px - 600px
+    .main {
+        .particles {
+        }
+
+        .mainBlock {
+            .text {
+                h1 {
+                    font-size: 23px;
+                }
+
+                h2 {
+                    font-size: 31px;
+                }
+
+                p {
+
+                }
+            }
+
+            .imgBlock {
+                img {
+                    width: 300px;
+
+                }
+            }
+        }
+    }
 }
