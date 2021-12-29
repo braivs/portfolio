@@ -14,6 +14,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
+
         &::before {
             position: absolute;
             content: '';
@@ -56,6 +57,92 @@
         .description {
             @include text($textFontFamily, 16px, 1.8);
             font-weight: 300;
+        }
+    }
+}
+
+@media only screen and (max-width: 1800px) { // 1536px - 1800px
+    .project {
+        width: 400px;
+        .image {
+            .viewBtn {
+            }
+        }
+
+        .projectInfo {
+            .projectTitle {
+            }
+
+            .description {
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1536px) { // 1200px - 1536px
+    .project {
+        width: 315px;
+
+        .image {
+            .viewBtn {
+            }
+        }
+
+        .projectInfo {
+            .projectTitle {
+                @include text($titleFontFamily, 18px, 1);
+            }
+
+            .description {
+                @include text($textFontFamily, 16px, 1.5);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) { // 600px - 1200px
+    .project {
+        //width: 200px;
+
+        .image {
+            width: 300px;
+            height: 200px;
+            .viewBtn {
+            }
+        }
+
+        .projectInfo {
+            .projectTitle {
+            }
+
+            .description {
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { // 350px - 600px
+    .project {
+        width: 100%;
+        @include flex(column, center, center, nowrap);
+
+
+        .image {
+            width: 200px;
+            height: 150px;
+
+            .viewBtn {
+            }
+        }
+
+        .projectInfo {
+            @include flex(column, center, center, nowrap);
+
+            .projectTitle {
+            }
+
+            .description {
+            }
         }
     }
 }

@@ -30,7 +30,7 @@ const skills = [
     { id: v1(), title: 'REST API', logo: restAPI, },
     { id: v1(), title: 'AXIOS', logo: axios, },
     { id: v1(), title: 'Unit Tests', logo: jest, },
-    { id: v1(), title: 'StoryBook', logo: storyBook, },
+    { id: v1(), title: 'Storybook', logo: storyBook, },
     { id: v1(), title: 'Formik', logo: formik, },
     { id: v1(), title: 'Material-UI', logo: materialUI, },
     { id: v1(), title: 'Git', logo: git, },

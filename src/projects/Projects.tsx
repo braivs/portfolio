@@ -112,7 +112,7 @@ const projectsClassic = [
 export function Projects() {
     return (
         <div className={s.projectsBlock} id={'projects'}>
-            {/*<Fade>
+            <Fade>
                 <div className={s.projectsContainer}>
                     <Title text={'Projects'}/>
                     <div className={s.projects}>
@@ -135,7 +135,7 @@ export function Projects() {
                     </div>
 
                 </div>
-            </Fade>*/}
+            </Fade>
         </div>
 
     );

@@ -11,6 +11,10 @@
     height: 100%;
     width: 80%;
     margin: 0 auto;
+
+    @media only screen and (max-width: 1536px) { // 1200px - 1536px
+        width: 80%;
+    }
 }
 
 @mixin flex($direction, $justifyContent, $alignItems, $wrap) {
@@ -33,5 +37,10 @@
 @mixin block($backgroundColor) {
     background-color: $backgroundColor;
     padding: 104px 0;
+
+    @media only screen and (max-width: 1536px) { // 1200px - 1536px
+        padding: 64px 0;
+    }
+
 }
 
