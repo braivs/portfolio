@@ -14,14 +14,62 @@
         }
     }
 
-    @media screen and (max-width: $lg) {
+    /*@media screen and (max-width: $lg) {
         .skillsContainer {
             .skills {
                 @include flex(column, center, center, nowrap);
             }
         }
-    }
+    }*/
 
+}
+
+@media only screen and (max-width: 1800px) { // 1536px - 1800px
+    .skillsBlock {
+
+        .skillsContainer {
+
+            .skills {
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1536px) { // 1200px - 1536px
+    .skillsBlock {
+        padding: 64px 0;
+        .skillsContainer {
+
+            .skills {
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) { // 600px - 1200px
+    .skillsBlock {
+
+        .skillsContainer {
+
+            .skills {
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { // 350px - 600px
+    .skillsBlock {
+
+        .skillsContainer {
+
+            .skills {
+
+            }
+        }
+    }
 }
 
 

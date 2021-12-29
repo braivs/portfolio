@@ -14,8 +14,8 @@
         @include flex(row, flex-end, center, nowrap);
     }
 
-    @media screen and (max-width: 400px) {
+    /*@media screen and (max-width: 400px) {
         height: 90px;
 
-    }
+    }*/
 }

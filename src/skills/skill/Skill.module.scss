@@ -1,14 +1,68 @@
+@import '../../common/styles/sass/mixins';
+
 .skill {
-  width: 200px;
-  text-align: center;
-  align-items: center;
-  padding: 20px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
 
-  img {
-    width: 58.5px;
-  }
+    img {
+        width: 58.5px;
+    }
 
-  p {
-    margin-top: 10px;
-  }
+    p {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1800px) { // 1536px - 1800px
+    .skill {
+
+        img {
+        }
+
+        p {
+        }
+    }
+}
+
+@media only screen and (max-width: 1536px) { // 1200px - 1536px
+    .skill {
+
+        img {
+        }
+
+        p {
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) { // 600px - 1200px
+    .skill {
+        width: 150px;
+
+        img {
+        }
+
+        p {
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { // 350px - 600px
+    .skill {
+        width: 93px;
+        height: 100px;
+        padding: 15px;
+        font-size: 13px;
+        @include flex(column, space-between, center, nowrap);
+
+        img {
+            width: 40px;
+
+        }
+
+        p {
+        }
+    }
 }
