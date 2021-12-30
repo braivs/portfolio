@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import s from './BurgerNav.module.scss';
 import {Link} from "react-scroll";
-import {faArrowRight, faBars} from "@fortawesome/free-solid-svg-icons";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export function BurgerNav() {

@@ -38,7 +38,7 @@ export function Main() {
                 }
             },
         },
-        /*retina_detect: true,*/
+        retina_detect: true,
         fps_limit: 30,
     } as const;
 
@@ -61,12 +61,12 @@ export function Main() {
                             />
                             {/*BRIWS USTYUGOV*/}
                         </h2>
-                        <p>
+                        <h3>
                             <ReactTypingEffect
                                 text={["aka Sergey"]}
                             />
                             {/*aka Sergey*/}
-                        </p>
+                        </h3>
                     </div>
                     <Tilt>
                         <div className={s.imgBlock}>

@@ -3,7 +3,7 @@
 
 .main {
     height: 100vh;
-    background-color: blue;
+    background-color: $primaryColor;
     position: relative;
 
     .particles {
@@ -34,9 +34,9 @@
 
             }
 
-            p {
+            h3 {
                 font-size: 21px;
-
+                font-weight: 300
             }
         }
 
