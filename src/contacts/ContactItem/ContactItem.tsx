@@ -20,12 +20,12 @@ export function ContactItem(props: ContactItemPropsType) {
     `;
 
     return (
-        <span className={s.contactItem}>
+        <div className={s.contactItem}>
             <a href={props.href}><StyledIconFontAwesome
                 icon={props.icon} className={s.contactStyle}
             />
             </a>
-</span>
+        </div>
 
 
     )
