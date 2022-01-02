@@ -31,7 +31,7 @@ type constactsType = Array<{
 const constacts: constactsType = [
     {id: v1(), icon: faTelegram, href: 'https://t.me/brightwiths', hoverColor: '#23a9ea'},
     {id: v1(), icon: faLinkedinIn, href: 'https://www.linkedin.com/in/briws/', hoverColor: 'red'},
-    {id: v1(), icon: faGithub, href: 'https://github.com/brightwiths', hoverColor: 'blud'},
+    {id: v1(), icon: faGithub, href: 'https://github.com/brightwiths', hoverColor: '#CDD9E5'},
     {id: v1(), icon: faFacebook, href: 'https://www.facebook.com/brightwiths', hoverColor: 'yellow'},
     {id: v1(), icon: faVk, href: 'https://vk.com/brightwiths', hoverColor: 'white'},
     {id: v1(), icon: faYoutube, href: 'https://www.youtube.com/channel/UChsgjWWbhYzEfma5LwgVlPQ', hoverColor: 'brown'},
@@ -128,6 +128,7 @@ export function Contacts() {
                             icon={el.icon}
                             id={el.id}
                             href={el.href}
+                            hoverColor={el.hoverColor}
                         />)}
                     </div>
                 </div>
