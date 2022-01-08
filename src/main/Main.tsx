@@ -5,42 +5,12 @@ import Particles from "react-tsparticles";
 import ReactTypingEffect from "react-typing-effect";
 import {Fade} from "react-awesome-reveal";
 import Tilt from 'react-parallax-tilt';
+import {particlesPreset} from "./particlesConfigs/particlesPreset";
+import {particlesFirstConfig} from "./particlesConfigs/particlesFirstConfig";
+import {particlesCollisions} from "./particlesConfigs/particlesCollisions";
 
 export function Main() {
-    const particleOptions = {
-        particles: {
-            number: {
-                value: 150,
-                limit: 300,
-                density: {
-                    enable: true,
-                    value_area: 800
-                }
-            },
-            line_linked: {
-                enable: true,
-                distance: 100,
-                opacity: 1,
-                width: 1
-            },
-            move: {
-                enable: true,
-                speed: 3,
-                direction: "none",
-                random: false,
-                straight: false,
-                out_mode: "out",
-                bounce: false,
-                attract: {
-                    enable: false,
-                    rotateX: 600,
-                    rotateY: 1200
-                }
-            },
-        },
-        retina_detect: true,
-        fps_limit: 30,
-    } as const;
+    const particleOptions = particlesCollisions
 
     return (
         <div className={s.main} id={'main'}>
