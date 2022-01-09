@@ -9,7 +9,9 @@ type SkillPropsType = {
 export function Skill(props: SkillPropsType) {
     return (
         <div className={s.skill}>
-            <img src={props.logo} alt="imgMonitor"/>
+            <div className={s.imgContainer}>
+                <img src={props.logo} alt="imgMonitor"/>
+            </div>
             <h3>{props.title}</h3>
         </div>
     );

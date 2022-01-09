@@ -19,6 +19,7 @@ import materialUI from '../assets/image/logos/material_ui.png'
 import git from '../assets/image/logos/Git.png'
 import postman from '../assets/image/logos/postman.png'
 import bootstrap from '../assets/image/logos/Bootstrap.png'
+import styled from '../assets/image/logos/styled-components.png'
 import {Fade} from "react-awesome-reveal";
 
 
@@ -38,7 +39,8 @@ const skills = [
     { id: v1(), title: 'HTML', logo: logoHTML, },
     { id: v1(), title: 'CSS',  logo: logoCSS, },
     { id: v1(), title: 'SASS', logo: sass, },
-    { id: v1(), title: 'Bootstrap', logo: bootstrap, },
+    // { id: v1(), title: 'Bootstrap', logo: bootstrap, },
+    { id: v1(), title: 'Styled Components', logo: styled, },
 
 ]
 

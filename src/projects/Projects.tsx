@@ -3,6 +3,7 @@ import s from './Projects.module.scss'
 import {v1} from "uuid";
 import {Project} from "./project/Project";
 import {Title} from "../common/components/title/Title";
+import cardsImage from './../assets/image/sitesSPA/cards.jpg'
 import todoImage from './../assets/image/sitesSPA/todolist.jpg'
 import socialImage from './../assets/image/sitesSPA/social-network.jpg'
 import counterImage from './../assets/image/sitesSPA/counter.jpg'
@@ -20,6 +21,13 @@ import {Fade} from "react-awesome-reveal";
 
 
 const projectsSPA = [
+    {
+        id: v1(),
+        title: 'BrightCards',
+        description: 'App for learning cards.',
+        link: 'https://brightwiths.github.io/iti_bright_cards_c2',
+        img: {backgroundImage: `url(${cardsImage})`}
+    },
     {
         id: v1(),
         title: 'BrightNet',
@@ -141,3 +149,4 @@ export function Projects() {
     );
 }
 
+// todo: fix open project link

@@ -12,15 +12,12 @@ export function Project(props: ProjectPropsType) {
   return (
     <div className={s.project}>
       <div className={s.image} style={props.style} onClick={() => window.open(props.link, "_blank")}>
-        <a className={s.viewBtn} href={props.link}>Watch</a>
+        <div className={s.viewBtn}>Watch</div>
       </div>
       <div className={s.projectInfo}>
         <h3 className={s.projectTitle}>{props.title}</h3><br/>
         <div className={s.description}>{props.description}</div>
       </div>
-
-
-
     </div>
   );
 }

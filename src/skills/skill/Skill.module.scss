@@ -5,9 +5,19 @@
     text-align: center;
     align-items: center;
     padding: 20px;
+    @include flex(column, center, center, nowrap);
 
-    img {
-        width: 58.5px;
+    .imgContainer {
+        width: 65px;
+        height: 65px;
+        @include flex(row, center, center, nowrap);
+        //border: 1px solid red;
+        img {
+            width: 53px;
+            height: auto;
+            //border: 1px solid brown;
+
+        }
     }
 
     p {
