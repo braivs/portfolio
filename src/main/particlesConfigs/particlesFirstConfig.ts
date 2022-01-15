@@ -1,8 +1,8 @@
 export const particlesFirstConfig = {
     particles: {
         number: {
-            value: 150,
-            limit: 300,
+            value: 100,
+            limit: 200,
             /*density: {
                 enable: true,
                 value_area: 800
@@ -16,7 +16,7 @@ export const particlesFirstConfig = {
         },
         move: {
             enable: true,
-            speed: 3,
+            speed: 2,
             direction: "none",
             random: false,
             straight: false,
