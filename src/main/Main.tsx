@@ -30,16 +30,16 @@ export function Main() {
                             {/*HI, I`M REACT DEVELOPER*/}
                         </h1>
                         <h2>
-                            <ReactTypingEffect
+                           {/* <ReactTypingEffect
                                 text={["BRIWS USTYUGOV"]}
-                            />
-                            {/*BRIWS USTYUGOV*/}
+                            />*/}
+                            BRIWS USTYUGOV
                         </h2>
                         <h3>
-                            <ReactTypingEffect
+                            {/*<ReactTypingEffect
                                 text={["aka Sergey"]}
-                            />
-                            {/*aka Sergey*/}
+                            />*/}
+                            aka Sergey
                         </h3>
                     </div>
                     <Tilt>

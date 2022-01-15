@@ -126,8 +126,8 @@ export function Projects() {
                     <div className={s.projects}>
                         <Tabs className={s.tabs}>
                             <TabList>
-                                <Tab>Single-page applications</Tab>
-                                <Tab>Classic sites</Tab>
+                                <Tab>SPA React</Tab>
+                                <Tab>HTML, CSS, JS</Tab>
                             </TabList>
                             <div className={s.tabsContent}>
                                 <TabPanel className={s.tabElement}>

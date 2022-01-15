@@ -36,6 +36,10 @@
                     }
                 }
 
+                textarea {
+                    resize: none;
+                }
+
                 // autofill color for email
                 input:-webkit-autofill,
                 input:-webkit-autofill:hover,

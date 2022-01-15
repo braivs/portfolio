@@ -7,10 +7,16 @@
     .skillsContainer {
         @include container();
         @include flex(column, center, center, nowrap);
+        //display: grid;
 
         .skills {
             margin-top: 30px;
             @include flex(row, space-between, stretch, wrap);
+
+            /*width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, auto);*/
+            //border: 1px solid red;
         }
     }
 
@@ -62,7 +68,7 @@
 
 @media only screen and (max-width: 600px) { // 350px - 600px
     .skillsBlock {
-
+        grid-gap: 20px;
         .skillsContainer {
 
             .skills {
