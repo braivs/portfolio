@@ -15,7 +15,6 @@
         left: 0;
         height: 0;
         @include flex(column, space-between, center, nowrap);
-        height: 0;
         padding: 20px;
         transform: translate(0, -150px);
         transition: 0.5s;

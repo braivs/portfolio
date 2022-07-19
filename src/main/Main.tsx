@@ -35,12 +35,6 @@ export function Main() {
                             />*/}
                             BRIWS USTYUGOV
                         </h2>
-                        <h3>
-                            {/*<ReactTypingEffect
-                                text={["aka Sergey"]}
-                            />*/}
-                            aka Sergey
-                        </h3>
                     </div>
                     <Tilt>
                         <div className={s.imgBlock}>
