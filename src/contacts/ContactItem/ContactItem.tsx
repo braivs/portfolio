@@ -11,7 +11,6 @@ type ContactItemPropsType = {
     hoverColor: string
 }
 
-
 export function ContactItem(props: ContactItemPropsType) {
     const StyledIconFontAwesome = styled(FontAwesomeIcon)`
       &:hover {

@@ -1,16 +1,13 @@
-import React from 'react';
-import s from './Main.module.scss';
-import photo from '../assets/image/myPhoto.jpg'
+import React from 'react'
+import s from './Main.module.scss'
+import photo from '../assets/image/myPhoto2.jpg'
 // import Particles from "react-tsparticles";
-import ReactTypingEffect from "react-typing-effect";
-import {Fade} from "react-awesome-reveal";
-import Tilt from 'react-parallax-tilt';
-import {particlesPreset} from "./particlesConfigs/particlesPreset";
-import {particlesFirstConfig} from "./particlesConfigs/particlesFirstConfig";
-import {particlesCollisions} from "./particlesConfigs/particlesCollisions";
+import ReactTypingEffect from "react-typing-effect"
+import {Fade} from "react-awesome-reveal"
+import Tilt from 'react-parallax-tilt'
+import {particlesFirstConfig} from "./particlesConfigs/particlesFirstConfig"
 // import Particles from "react-particles-js";
-import {PaticleFastPerfomanceMaybe} from "./particlesConfigs/PaticleFastPerfomanceMaybe";
-import Particles from "react-tsparticles";
+import Particles from "react-tsparticles"
 
 export function Main() {
     const particleOptions = particlesFirstConfig
@@ -33,7 +30,7 @@ export function Main() {
                            {/* <ReactTypingEffect
                                 text={["BRIWS USTYUGOV"]}
                             />*/}
-                            BRIWS USTYUGOV
+                            BRAIVS USTIUGOV
                         </h2>
                     </div>
                     <Tilt>

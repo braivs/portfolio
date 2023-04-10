@@ -7,6 +7,8 @@ import cardsImage from './../assets/image/sitesSPA/cards.jpg'
 import todoImage from './../assets/image/sitesSPA/todolist.jpg'
 import socialImage from './../assets/image/sitesSPA/social-network.jpg'
 import counterImage from './../assets/image/sitesSPA/counter.jpg'
+import keresverse from './../assets/image/sitesSPA/keresverse.jpg'
+import hydro_bridge from './../assets/image/sitesSPA/hydro_bridge.jpg'
 import namazonImage from './../assets/image/sitesClassic/namazon.jpg'
 import djStoreImg from './../assets/image/sitesClassic/djStore.jpg'
 import GoaExcursionsImg from './../assets/image/sitesClassic/GoaExcursions.jpg'
@@ -21,6 +23,20 @@ import {Fade} from "react-awesome-reveal";
 
 
 const projectsSPA = [
+    {
+        id: v1(),
+        title: 'Keresverse',
+        description: 'App for crypto game with chat',
+        link: 'https://dev-keresverse.netlify.app',
+        img: {backgroundImage: `url(${keresverse})`}
+    },
+    {
+        id: v1(),
+        title: 'Keresverse',
+        description: 'App for convertion HYDRO token from chain to chain',
+        link: 'https://hydro-bridge.org',
+        img: {backgroundImage: `url(${hydro_bridge})`}
+    },
     {
         id: v1(),
         title: 'BrightCards',
