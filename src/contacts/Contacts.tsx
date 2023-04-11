@@ -1,8 +1,6 @@
-import React from 'react';
+import React from 'react'
 import s from './Contacts.module.scss'
-import {Title} from "../common/components/title/Title";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import {Title} from "../common/components/title/Title"
 import {
     faFacebook,
     faGithub,
@@ -11,13 +9,13 @@ import {
     faTelegram,
     faVk,
     faYoutube
-} from "@fortawesome/free-brands-svg-icons";
-import {ContactItem} from "./ContactItem/ContactItem";
-import {IconProp} from "@fortawesome/fontawesome-svg-core";
-import {v1} from "uuid";
-import {useFormik} from "formik";
-import emailjs from 'emailjs-com';
-import {Fade} from "react-awesome-reveal";
+} from "@fortawesome/free-brands-svg-icons"
+import {ContactItem} from "./ContactItem/ContactItem"
+import {IconProp} from "@fortawesome/fontawesome-svg-core"
+import {v1} from "uuid"
+import {useFormik} from "formik"
+import emailjs from 'emailjs-com'
+import {Fade} from "react-awesome-reveal"
 
 
 type constactsType = Array<{
@@ -29,8 +27,8 @@ type constactsType = Array<{
 
 //todo: need to pass hoverColor to Contacts
 const constacts: constactsType = [
-    {id: v1(), icon: faTelegram, href: 'https://t.me/brightwithsme', hoverColor: '#23a9ea'},
     {id: v1(), icon: faLinkedinIn, href: 'https://www.linkedin.com/in/briws/', hoverColor: '#0E76A8'},
+    {id: v1(), icon: faTelegram, href: 'https://t.me/brightwithsme', hoverColor: '#23a9ea'},
     {id: v1(), icon: faGithub, href: 'https://github.com/brightwiths', hoverColor: '#333333'},
     {id: v1(), icon: faFacebook, href: 'https://www.facebook.com/brightwiths', hoverColor: '#3B5998'},
     {id: v1(), icon: faVk, href: 'https://vk.com/brightwiths', hoverColor: '#2B587A'},
@@ -78,7 +76,7 @@ export function Contacts() {
     })
 
     function SendEmail(object: { user_name: string, user_email: string, message: string }) {
-        emailjs.send("gmail", "contact_form", object, "user_iVELjxR7TwQRSAYW1Jeft")
+        emailjs.send("service_na0759w", "contact_form", object, "S0nrbQablyaBTEVcF")
             .then((result) => {
                 console.log(result.text)
             }, (error) => {
@@ -92,7 +90,7 @@ export function Contacts() {
             <div className={s.contactContainer}>
                 <Title text={'Contacts'} view={"inverse"}/>
                 <div className={s.contacts}>
-                    <form onSubmit={formik.handleSubmit}>
+                    {/*<form onSubmit={formik.handleSubmit}>
                         <label htmlFor='user_name'>What is Your Name:</label>
                         <input
                             type={'text'}
@@ -121,7 +119,7 @@ export function Contacts() {
                             ? <div style={{color: 'red'}}>{formik.errors.message}</div>
                             : null}
                         <button type={'submit'}>Send <span><FontAwesomeIcon icon={faArrowRight}/></span></button>
-                    </form>
+                    </form>*/}
                     <div className={s.social}>
                         {constacts.map(el => <ContactItem
                             key={el.id}

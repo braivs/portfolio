@@ -1,14 +1,14 @@
 .contactItem {
     margin-left: 8px;
     margin-right: 8px;
-    width: 33px;
-    height: 33px;
+    width: 43px;
+    height: 43px;
     .contactStyle {
         display: block;
         color: #4e555a;
         transition: 0.2s;
-        font-size: 30px;
+        font-size: 40px;
 
-        &:hover {font-size: 32px;}
+        &:hover {font-size: 44px;}
     }
 }
