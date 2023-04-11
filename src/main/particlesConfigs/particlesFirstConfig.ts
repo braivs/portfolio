@@ -31,4 +31,5 @@ export const particlesFirstConfig = {
     },
     retina_detect: true,
     fps_limit: 30,
+    fullScreen: false,
 } as const;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useCallback} from 'react'
 import s from './Main.module.scss'
 import photo from '../assets/image/myPhoto2.jpg'
 // import Particles from "react-tsparticles";
@@ -8,14 +8,18 @@ import Tilt from 'react-parallax-tilt'
 import {particlesFirstConfig} from "./particlesConfigs/particlesFirstConfig"
 // import Particles from "react-particles-js";
 import Particles from "react-tsparticles"
+import type {Engine} from "tsparticles-engine"
+import {loadFull} from "tsparticles"
 
 export function Main() {
-    const particleOptions = particlesFirstConfig
+
+    const particlesInit = useCallback(async (engine: Engine) => {
+        await loadFull(engine);
+    }, []);
 
     return (
         <div className={s.main} id={'main'}>
-            {/*<Particles className={s.particles} options={particleOptions}/>*/}
-            <Particles className={s.particles} options={particleOptions}/>
+            <Particles id="tsparticles" init={particlesInit} options={particlesFirstConfig} height={'100vh'}/>
             <div className={s.mainBlock}>
                 <Fade>
 
