@@ -3,6 +3,7 @@ import s from './BurgerNav.module.scss';
 import {Link} from "react-scroll";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import close from '../../assets/image/close.png'
 
 export function BurgerNav() {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
@@ -22,7 +23,11 @@ export function BurgerNav() {
                 <Link activeClass={s.active} to="contacts" spy={true} smooth={true} offset={-80}
                       duration={500}>Contacts</Link>
             </div>
-            <FontAwesomeIcon icon={faBars} className={s.burgerBtn} onClick={onBurgerBtnClick}/>
+            {
+                menuIsOpen
+                    ? <img src={close} alt="" className={s.burgerBtn} onClick={onBurgerBtnClick}/>
+                    : <FontAwesomeIcon icon={faBars} className={s.burgerBtn} onClick={onBurgerBtnClick}/>
+            }
         </div>
     );
 }

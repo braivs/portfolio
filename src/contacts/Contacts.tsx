@@ -29,7 +29,7 @@ type constactsType = Array<{
 
 //todo: need to pass hoverColor to Contacts
 const constacts: constactsType = [
-    {id: v1(), icon: faTelegram, href: 'https://t.me/brightwiths', hoverColor: '#23a9ea'},
+    {id: v1(), icon: faTelegram, href: 'https://t.me/brightwithsme', hoverColor: '#23a9ea'},
     {id: v1(), icon: faLinkedinIn, href: 'https://www.linkedin.com/in/briws/', hoverColor: '#0E76A8'},
     {id: v1(), icon: faGithub, href: 'https://github.com/brightwiths', hoverColor: '#333333'},
     {id: v1(), icon: faFacebook, href: 'https://www.facebook.com/brightwiths', hoverColor: '#3B5998'},
