@@ -16,7 +16,6 @@
             .tabs {
                 @include flex(column, center, center, nowrap);
                 width: 100%;
-                cursor: pointer;
 
                 .tabsContent {
                     width: 100%;
