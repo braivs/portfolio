@@ -32,7 +32,7 @@ const projectsSPA = [
     },
     {
         id: v1(),
-        title: 'Keresverse',
+        title: 'HydroBridge',
         description: 'App for convertion HYDRO token from chain to chain',
         link: 'https://hydro-bridge.org',
         img: {backgroundImage: `url(${hydro_bridge})`}
