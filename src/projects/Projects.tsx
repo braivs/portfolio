@@ -27,14 +27,14 @@ const projectsSPA = [
         id: v1(),
         title: 'Keresverse',
         description: 'App for crypto game with chat',
-        link: 'https://dev-keresverse.netlify.app',
+        link: 'https://brightwiths.github.io/keres_fork',
         img: {backgroundImage: `url(${keresverse})`}
     },
     {
         id: v1(),
         title: 'HydroBridge',
         description: 'App for convertion HYDRO token from chain to chain',
-        link: 'https://hydro-bridge.org',
+        link: 'https://brightwiths.github.io/bridge_fork',
         img: {backgroundImage: `url(${hydro_bridge})`}
     },
     {
