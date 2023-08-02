@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <div className={s.footerBlock}>
       <div className={s.footerContainer}>
-        <p>Site created by Briws. 2023.</p>
+        <p>Site created by Braivs. 2023.</p>
       </div>
     </div>
   );
