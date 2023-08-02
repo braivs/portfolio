@@ -27,35 +27,35 @@ const projectsSPA = [
         id: v1(),
         title: 'Keresverse',
         description: 'App for crypto game with chat',
-        link: 'https://brightwiths.github.io/keres_fork',
+        link: 'https://braivs.github.io/keres_fork',
         img: {backgroundImage: `url(${keresverse})`}
     },
     {
         id: v1(),
         title: 'HydroBridge',
         description: 'App for convertion HYDRO token from chain to chain',
-        link: 'https://brightwiths.github.io/bridge_fork',
+        link: 'https://braivs.github.io/bridge_fork',
         img: {backgroundImage: `url(${hydro_bridge})`}
     },
     {
         id: v1(),
         title: 'BrightCards',
         description: 'App for learning cards.',
-        link: 'https://brightwiths.github.io/iti_bright_cards_c2',
+        link: 'https://braivs.github.io/iti_bright_cards_c2',
         img: {backgroundImage: `url(${cardsImage})`}
     },
     {
         id: v1(),
         title: 'BrightNet',
         description: 'Social network for samurais.',
-        link: 'https://brightwiths.github.io/iti_social_network/',
+        link: 'https://braivs.github.io/iti_social_network/',
         img: {backgroundImage: `url(${socialImage})`}
     },
     {
         id: v1(),
         title: 'Brello',
         description: 'Trello analog by BriWS = Brello. ',
-        link: 'https://brightwiths.github.io/iti_brello',
+        link: 'https://braivs.github.io/iti_brello',
         img: {backgroundImage: `url(${todoImage})`}
 
     },
@@ -63,7 +63,7 @@ const projectsSPA = [
         id: v1(),
         title: 'Counter',
         description: 'Counter with settings.',
-        link: 'https://brightwiths.github.io/iti_counter',
+        link: 'https://braivs.github.io/iti_counter',
         img: {backgroundImage: `url(${counterImage})`}
     }
 ]
@@ -80,14 +80,14 @@ const projectsClassic = [
         id: v1(),
         title: 'Goa excursions',
         description: 'Selling excursions in Goa.',
-        link: 'https://brightwiths.github.io/goaexcursions/',
+        link: 'https://braivs.github.io/goaexcursions/',
         img: {backgroundImage: `url(${GoaExcursionsImg})`}
     },
     {
         id: v1(),
         title: 'Access Bars and Facelift',
         description: 'Access Bars and Facelift commercial practise in Goa.',
-        link: 'https://brightwiths.github.io/goaaccess/',
+        link: 'https://braivs.github.io/goaaccess/',
         img: {backgroundImage: `url(${AccessBarsImg})`}
 
     },
@@ -95,7 +95,7 @@ const projectsClassic = [
         id: v1(),
         title: 'DJ Store',
         description: 'Sound technics.',
-        link: 'https://brightwiths.github.io/testDjStore',
+        link: 'https://braivs.github.io/testDjStore',
         img: {backgroundImage: `url(${djStoreImg})`}
 
     },
@@ -103,7 +103,7 @@ const projectsClassic = [
         id: v1(),
         title: 'Cars body parts',
         description: 'Parts for cars.',
-        link: 'https://brightwiths.github.io/psd2htmlCarcaseRepair',
+        link: 'https://braivs.github.io/psd2htmlCarcaseRepair',
         img: {backgroundImage: `url(${carsBodyPartsImg})`}
 
     },
@@ -111,7 +111,7 @@ const projectsClassic = [
         id: v1(),
         title: 'Blitz',
         description: '',
-        link: 'https://brightwiths.github.io/psd2htmlBlitz/',
+        link: 'https://braivs.github.io/psd2htmlBlitz/',
         img: {backgroundImage: `url(${BlitzImg})`}
 
     },
@@ -119,7 +119,7 @@ const projectsClassic = [
         id: v1(),
         title: 'Counsel',
         description: '',
-        link: 'https://brightwiths.github.io/psd2htmlCounsel/',
+        link: 'https://braivs.github.io/psd2htmlCounsel/',
         img: {backgroundImage: `url(${CounselImg})`}
 
     },
@@ -127,7 +127,7 @@ const projectsClassic = [
         id: v1(),
         title: 'Cooper',
         description: '',
-        link: 'https://brightwiths.github.io/psd2htmlCooper/',
+        link: 'https://braivs.github.io/psd2htmlCooper/',
         img: {backgroundImage: `url(${CooperImg})`}
 
     },
