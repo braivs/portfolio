@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.17ee67fb.chunk.css",
-    "main.js": "/portfolio/static/js/main.4f9fcabb.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.4f9fcabb.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.1814f521.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1814f521.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8980c5b1.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.8980c5b1.js.map",
     "static/js/2.3d27d6a2.chunk.js": "/portfolio/static/js/2.3d27d6a2.chunk.js",
@@ -29,7 +29,7 @@
     "static/media/jest.cb8f6580.png": "/portfolio/static/media/jest.cb8f6580.png",
     "static/media/keresverse.1da6feff.jpg": "/portfolio/static/media/keresverse.1da6feff.jpg",
     "static/media/material_ui.e8b505b6.png": "/portfolio/static/media/material_ui.e8b505b6.png",
-    "static/media/myPhoto2.4b326d04.jpg": "/portfolio/static/media/myPhoto2.4b326d04.jpg",
+    "static/media/myPhoto.aa0ef597.jpg": "/portfolio/static/media/myPhoto.aa0ef597.jpg",
     "static/media/namazon.c8524d4f.jpg": "/portfolio/static/media/namazon.c8524d4f.jpg",
     "static/media/postman.209361ad.png": "/portfolio/static/media/postman.209361ad.png",
     "static/media/sass.c66aae72.png": "/portfolio/static/media/sass.c66aae72.png",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.8980c5b1.js",
     "static/js/2.3d27d6a2.chunk.js",
     "static/css/main.17ee67fb.chunk.css",
-    "static/js/main.4f9fcabb.chunk.js"
+    "static/js/main.1814f521.chunk.js"
   ]
 }
