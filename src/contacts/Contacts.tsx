@@ -32,7 +32,7 @@ const constacts: constactsType = [
     {id: v1(), icon: faGithub, href: 'https://github.com/braivs', hoverColor: '#333333'},
     // {id: v1(), icon: faFacebook, href: 'https://www.facebook.com/brightwiths', hoverColor: '#3B5998'},
     // {id: v1(), icon: faVk, href: 'https://vk.com/brightwiths', hoverColor: '#2B587A'},
-    // {id: v1(), icon: faYoutube, href: 'https://www.youtube.com/@braivs', hoverColor: '#C4302B'},
+    {id: v1(), icon: faYoutube, href: 'https://www.youtube.com/@braivs', hoverColor: '#C4302B'},
     // {id: v1(), icon: faInstagram, href: 'https://www.instagram.com/brightwiths/', hoverColor: '#3F729B'}
 ]
 
