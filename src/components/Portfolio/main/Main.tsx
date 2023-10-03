@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react'
 import s from './Main.module.scss'
-import photo from '../assets/image/myPhoto.jpg'
+import photo from '../../../assets/image/myPhoto.jpg'
 // import Particles from "react-tsparticles";
 import ReactTypingEffect from "react-typing-effect"
 import {Fade} from "react-awesome-reveal"

@@ -1,15 +1,7 @@
 import React from 'react'
 import s from './Contacts.module.scss'
-import {Title} from "../common/components/title/Title"
-import {
-    faFacebook,
-    faGithub,
-    faInstagram,
-    faLinkedinIn,
-    faTelegram,
-    faVk,
-    faYoutube
-} from "@fortawesome/free-brands-svg-icons"
+import {Title} from "../../../common/components/title/Title"
+import {faGithub, faLinkedinIn, faTelegram, faYoutube} from "@fortawesome/free-brands-svg-icons"
 import {ContactItem} from "./ContactItem/ContactItem"
 import {IconProp} from "@fortawesome/fontawesome-svg-core"
 import {v1} from "uuid"

@@ -2,21 +2,21 @@ import React from 'react';
 import s from './Projects.module.scss'
 import {v1} from "uuid";
 import {Project} from "./project/Project";
-import {Title} from "../common/components/title/Title";
-import cardsImage from './../assets/image/sitesSPA/cards.jpg'
-import todoImage from './../assets/image/sitesSPA/todolist.jpg'
-import socialImage from './../assets/image/sitesSPA/social-network.jpg'
-import counterImage from './../assets/image/sitesSPA/counter.jpg'
-import keresverse from './../assets/image/sitesSPA/keresverse.jpg'
-import hydro_bridge from './../assets/image/sitesSPA/hydro_bridge.jpg'
-import namazonImage from './../assets/image/sitesClassic/namazon.jpg'
-import djStoreImg from './../assets/image/sitesClassic/djStore.jpg'
-import GoaExcursionsImg from './../assets/image/sitesClassic/GoaExcursions.jpg'
-import AccessBarsImg from './../assets/image/sitesClassic/AccessBar.jpg'
-import carsBodyPartsImg from './../assets/image/sitesClassic/carsBodyParts.jpg'
-import BlitzImg from './../assets/image/sitesClassic/Blitz.jpg'
-import CounselImg from './../assets/image/sitesClassic/Counsel.jpg'
-import CooperImg from './../assets/image/sitesClassic/Cooper.jpg'
+import {Title} from "../../../common/components/title/Title";
+import cardsImage from '../../../assets/image/sitesSPA/cards.jpg'
+import todoImage from '../../../assets/image/sitesSPA/todolist.jpg'
+import socialImage from '../../../assets/image/sitesSPA/social-network.jpg'
+import counterImage from '../../../assets/image/sitesSPA/counter.jpg'
+import keresverse from '../../../assets/image/sitesSPA/keresverse.jpg'
+import hydro_bridge from '../../../assets/image/sitesSPA/hydro_bridge.jpg'
+import namazonImage from '../../../assets/image/sitesClassic/namazon.jpg'
+import djStoreImg from '../../../assets/image/sitesClassic/djStore.jpg'
+import GoaExcursionsImg from '../../../assets/image/sitesClassic/GoaExcursions.jpg'
+import AccessBarsImg from '../../../assets/image/sitesClassic/AccessBar.jpg'
+import carsBodyPartsImg from '../../../assets/image/sitesClassic/carsBodyParts.jpg'
+import BlitzImg from '../../../assets/image/sitesClassic/Blitz.jpg'
+import CounselImg from '../../../assets/image/sitesClassic/Counsel.jpg'
+import CooperImg from '../../../assets/image/sitesClassic/Cooper.jpg'
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import './react-tabs.scss';
 import {Fade} from "react-awesome-reveal";

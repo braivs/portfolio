@@ -3,7 +3,7 @@ import s from './BurgerNav.module.scss';
 import {Link} from "react-scroll";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import close from '../../assets/image/close.png'
+import close from '../../../../assets/image/close.png'
 
 export function BurgerNav() {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
