@@ -32,21 +32,46 @@
 
             h3 {
                 font-size: 21px;
-                font-weight: 300
+                font-weight: 300;
             }
         }
 
-        .imgBlock {
-            z-index: 1;
-
-            img {
-                width: 500px;
+        .cV_Photo {
+            .cv {
+                margin-right: 20px;
+                width: 150px;
+                height: 150px;
                 border-radius: 50%;
-                border: 15px solid white;
+                //border: 15px solid white;
                 background-color: white;
+                transition: 0.2s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 38px;
+                cursor: pointer;
+                text-align: center;
+                line-height: 1;
 
+                &:hover {
+                    border: 15px solid $primaryColor;
+
+                }
+            }
+            .imgBlock {
+                z-index: 1;
+
+                img {
+                    width: 400px;
+                    border-radius: 50%;
+                    border: 15px solid white;
+                    background-color: white;
+
+                }
             }
         }
+
+
 
     }
 
@@ -74,11 +99,26 @@
                 }
             }
 
-            .imgBlock {
-                img {
-                    width: 450px;
+            .cV_Photo {
+                .cv {
+                    width: 120px;
+                    height: 120px;
+                    font-size: 30px;
+                }
+
+                .imgBlock {
+                    img {
+                        width: 300px;
+                    }
+                }
+                .imgBlock {
+                    img {
+                        width: 350px;
+                    }
                 }
             }
+
+
         }
     }
 }
@@ -103,9 +143,11 @@
                 }
             }
 
-            .imgBlock {
-                img {
-                    width: 350px;
+            .cV_Photo {
+                .imgBlock {
+                    img {
+                        width: 350px;
+                    }
                 }
             }
         }
@@ -120,9 +162,10 @@
         }
 
         .mainBlock {
-            @include flex(column, space-around, center, nowrap);
+            @include flex(column, center, center, nowrap);
 
             .text {
+                margin-bottom: 30px;
                 h1 {
                     font-size: 30px;
                 }
@@ -136,11 +179,15 @@
                 }
             }
 
-            .imgBlock {
-                img {
-
+            .cV_Photo {
+                .imgBlock {
+                    img {
+                        width: 300px;
+                    }
                 }
             }
+
+
         }
     }
 }
@@ -166,12 +213,15 @@
                 }
             }
 
-            .imgBlock {
-                img {
-                    width: 300px;
+            .cV_Photo {
+                .imgBlock {
+                    img {
+                        //width: 100px;
 
+                    }
                 }
             }
+
         }
     }
 }

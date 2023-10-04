@@ -1,3 +1,19 @@
+@import './common/styles/sass/variables';
+
 .app {
     overflow-y: hidden;
+
+    a {
+        color: $textColor;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:visited {
+            text-decoration: none;
+            color: $textColor;
+        }
+    }
 }
