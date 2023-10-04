@@ -1,14 +1,11 @@
 import React from 'react'
-import './App.css'
-import {Portfolio} from "./components/Portfolio/Portfolio"
-import {CV} from "./components/CV/CV"
+import s from './App.module.scss'
+import {Router} from "./router"
 
 function App() {
   return (
-    <div className="App">
-      {/*<Portfolio/>*/}
-      <CV/>
-      {/*cv will be there*/}
+    <div className={s.app}>
+      <Router />
     </div>
   );
 }
