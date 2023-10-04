@@ -23,9 +23,9 @@ export function Main() {
                 <Fade>
                     <div className={s.text}>
                         <h1>
-                            <ReactTypingEffect
+                            {/*<ReactTypingEffect
                                 text={["HI, I`M REACT DEVELOPER"]}
-                            />
+                            />*/}
                         </h1>
                         <h2>
                             BRAIVS USTIUGOV
