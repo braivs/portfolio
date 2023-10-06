@@ -26,6 +26,7 @@ import {Fade} from "react-awesome-reveal"
 const skills = [
     {id: v1(), title: 'React', logo: logoReact,},
     {id: v1(), title: 'Redux', logo: logoRedux,},
+    {id: v1(), title: 'RTK Query', logo: logoRedux,},
     {id: v1(), title: 'TypeScript', logo: logoTS},
     {id: v1(), title: 'JavaScript', logo: logoJS},
     {id: v1(), title: 'Firebase', logo: firebase},
