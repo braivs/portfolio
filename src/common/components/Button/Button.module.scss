@@ -1,0 +1,23 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.viewBtn {
+    @include flex(column, center, center, nowrap);
+    text-decoration: none;
+    background-color: $primaryColor;
+    width: 83px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: .25rem;
+    color: $textColor;
+    position: relative;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    //z-index: 1;
+    &:hover {
+        background-color: $accentColor;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+    }
+
+}

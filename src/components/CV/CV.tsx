@@ -1,10 +1,19 @@
 import s from './CV.module.scss'
+import {Button} from "../../common/components/Button/Button"
+import {useNavigate} from "react-router-dom"
 
 export const CV = () => {
+
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate('/')
+  }
+
   return (
     <div className={s.cv}>
-      cv will be here
-      {/*<iframe className={s.iframe} src={'./cv.pdf'} title={'CV'} />*/}
+      <Button title={'See portfolio'} className={s.buttonAdditional} onClick={onClick}/>
+      <iframe className={s.iframe} src={'./cv.pdf'} title={'CV'} />
     </div>
   )
 }
