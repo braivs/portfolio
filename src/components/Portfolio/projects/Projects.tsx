@@ -9,6 +9,7 @@ import socialImage from '../../../assets/image/sitesSPA/social-network.jpg'
 import counterImage from '../../../assets/image/sitesSPA/counter.jpg'
 import keresverse from '../../../assets/image/sitesSPA/keresverse.jpg'
 import hydro_bridge from '../../../assets/image/sitesSPA/hydro_bridge.jpg'
+import flashcards from '../../../assets/image/sitesSPA/flashcards.jpg'
 import namazonImage from '../../../assets/image/sitesClassic/namazon.jpg'
 import djStoreImg from '../../../assets/image/sitesClassic/djStore.jpg'
 import GoaExcursionsImg from '../../../assets/image/sitesClassic/GoaExcursions.jpg'
@@ -23,6 +24,13 @@ import {Fade} from "react-awesome-reveal";
 
 
 const projectsSPA = [
+    {
+        id: v1(),
+        title: 'Flashcards',
+        description: 'NEW app for learning cards. Done with Vite, Redux toolkit, RTK Query.',
+        link: 'https://iti-flashcards.vercel.app',
+        img: {backgroundImage: `url(${flashcards})`}
+    },
     {
         id: v1(),
         title: 'Keresverse',
