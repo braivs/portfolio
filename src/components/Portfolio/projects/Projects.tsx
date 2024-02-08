@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Projects.module.scss'
 import {v1} from "uuid";
-import {Project} from "./project/Project";
+import {Project, ProjectProps} from "./project/Project"
 import {Title} from "../../../common/components/title/Title";
 import cardsImage from '../../../assets/image/sitesSPA/cards.jpg'
 import todoImage from '../../../assets/image/sitesSPA/todolist.jpg'
@@ -23,20 +23,22 @@ import './react-tabs.scss';
 import {Fade} from "react-awesome-reveal";
 
 
-const projectsSPA = [
+const projectsSPA: Array<ProjectsArray> = [
     {
         id: v1(),
         title: 'Flashcards',
         description: 'NEW app for learning cards. Done with Vite, Redux toolkit, RTK Query.',
         link: 'https://iti-flashcards.vercel.app',
-        img: {backgroundImage: `url(${flashcards})`}
+        img: {backgroundImage: `url(${flashcards})`},
+        presentationLink: 'https://youtu.be/UHknyKFtRVk'
     },
     {
         id: v1(),
         title: 'Keresverse',
         description: 'App for crypto game with chat',
         link: 'https://braivs.github.io/keres_fork',
-        img: {backgroundImage: `url(${keresverse})`}
+        img: {backgroundImage: `url(${keresverse})`},
+        presentationLink: 'https://youtu.be/1ZaShwRJKoQ'
     },
     {
         id: v1(),
@@ -156,7 +158,7 @@ export function Projects() {
                             <div className={s.tabsContent}>
                                 <TabPanel className={s.tabElement}>
                                     {projectsSPA.map(el => <Project key={el.id} style={el.img} title={el.title}
-                                                                    description={el.description} link={el.link}/>)}
+                                                                    description={el.description} link={el.link} presentationLink={el.presentationLink}/>)}
                                 </TabPanel>
                                 <TabPanel className={s.tabElement}>
                                     {projectsClassic.map(el => <Project key={el.id} style={el.img} title={el.title}
@@ -173,4 +175,6 @@ export function Projects() {
     );
 }
 
-// todo: fix open project link
+type ProjectsArray= Omit<ProjectProps, 'style'> & {id: string, img: {backgroundImage: string}}
+
+

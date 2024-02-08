@@ -17,7 +17,7 @@
     }
 }
 
-@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+@mixin flex($direction, $justifyContent, $alignItems, $wrap: nowrap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justifyContent;

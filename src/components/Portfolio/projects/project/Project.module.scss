@@ -1,20 +1,17 @@
+@use '../../../../common/styles/sass/mixins';
 @import '../../../../common/styles/sass/variables';
-@import '../../../../common/styles/sass/mixins';
 
 .project {
     width: 450px;
-    @include flex(column, flex-start, stretch, nowrap);
+    @include mixins.flex(column, flex-start, stretch, nowrap);
 
-    .image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .buttonContainer {
+        @include mixins.flex($direction: column, $justifyContent: center, $alignItems: center);
         height: 300px;
         background-color: $bgColor;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
-        cursor: pointer;
 
         &::before {
             position: absolute;
@@ -27,24 +24,10 @@
             opacity: 0.4;
         }
 
-        .viewBtn {
-            @include flex(column, center, center, nowrap);
-            text-decoration: none;
-            background-color: $primaryColor;
-            width: 83px;
-            height: 40px;
-            font-weight: 600;
-            font-size: 16px;
-            border-radius: .25rem;
-            color: $textColor;
-            position: relative;
-            transition: all 0.5s ease;
-            //z-index: 1;
-            &:hover {
-                background-color: $accentColor;
-                box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
-            }
-
+        .secondButton {
+            width: auto;
+            margin-top: 10px;
+            padding: 0 10px;
         }
     }
 
@@ -52,11 +35,11 @@
         padding: 2.25rem 1.25rem;
 
         .projectTitle {
-            @include text($titleFontFamily, 18px, 1.8);
+            @include mixins.text($titleFontFamily, 18px, 1.8);
         }
 
         .description {
-            @include text($textFontFamily, 16px, 1.8);
+            @include mixins.text($textFontFamily, 16px, 1.8);
             font-weight: 300;
         }
     }
@@ -91,11 +74,11 @@
 
         .projectInfo {
             .projectTitle {
-                @include text($titleFontFamily, 18px, 1);
+                @include mixins.text($titleFontFamily, 18px, 1);
             }
 
             .description {
-                @include text($textFontFamily, 16px, 1.5);
+                @include mixins.text($textFontFamily, 16px, 1.5);
             }
         }
     }
@@ -125,7 +108,7 @@
 @media only screen and (max-width: 600px) { // 350px - 600px
     .project {
         width: 100%;
-        @include flex(column, center, center, nowrap);
+        @include mixins.flex(column, center, center, nowrap);
 
 
         .image {
@@ -137,7 +120,7 @@
         }
 
         .projectInfo {
-            @include flex(column, center, center, nowrap);
+            @include mixins.flex(column, center, center, nowrap);
 
             .projectTitle {
             }
