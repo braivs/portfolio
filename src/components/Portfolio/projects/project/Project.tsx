@@ -1,16 +1,17 @@
 import React from 'react'
 import s from './Project.module.scss'
 import {Button} from "../../../../common/components/Button/Button"
+import { clsx } from 'clsx'
 
 export function Project(props: ProjectProps) {
     return (
         <div className={s.project}>
             <div className={s.buttonContainer} style={props.style}>
                 <div className={s.image} onClick={() => window.open(props.link, "_blank")}>
-                    <Button title={'Watch'}/>
+                    <Button title={'Check implemented'} className={s.button}/>
                 </div>
                 {props.presentationLink && <div onClick={() => window.open(props.presentationLink, "_blank")}>
-                    <Button title={'Presentation'} className={s.secondButton}/>
+                    <Button title={'Watch overview'} className={clsx(s.button, s.secondButton)}/>
                 </div> }
             </div>
 

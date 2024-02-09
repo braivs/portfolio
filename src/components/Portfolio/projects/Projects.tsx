@@ -74,7 +74,8 @@ const projectsSPA: Array<ProjectsArray> = [
         title: 'Counter',
         description: 'Counter with settings.',
         link: 'https://braivs.github.io/iti_counter',
-        img: {backgroundImage: `url(${counterImage})`}
+        img: {backgroundImage: `url(${counterImage})`},
+        presentationLink: 'https://www.youtube.com/watch?v=WB4ebCmR1A4'
     }
 ]
 
