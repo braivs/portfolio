@@ -42,8 +42,8 @@ const projectsSPA: Array<ProjectsArray> = [
     },
     {
         id: v1(),
-        title: 'HydroBridge',
-        description: 'App for convertion HYDRO token from chain to chain',
+        title: 'HydroBridge (Inactive)',
+        description: 'An app for converting HYDRO tokens from one chain to another. Currently, this app only works partially because the smart contracts for this token are not operational.',
         link: 'https://braivs.github.io/bridge_fork',
         img: {backgroundImage: `url(${hydro_bridge})`}
     },
@@ -52,22 +52,24 @@ const projectsSPA: Array<ProjectsArray> = [
         title: 'BrightCards',
         description: 'App for learning cards.',
         link: 'https://braivs.github.io/iti_bright_cards_c2',
-        img: {backgroundImage: `url(${cardsImage})`}
+        img: {backgroundImage: `url(${cardsImage})`},
+        presentationLink: 'https://youtu.be/DlPUBMoZHYI',
     },
     {
         id: v1(),
-        title: 'BrightNet',
+        title: 'BrightNet',                                                                                      
         description: 'Social network for samurais.',
         link: 'https://braivs.github.io/iti_social_network/',
-        img: {backgroundImage: `url(${socialImage})`}
+        img: {backgroundImage: `url(${socialImage})`},
+        presentationLink: 'https://youtu.be/KgFnOPTQOKk'
     },
     {
         id: v1(),
         title: 'Brello',
         description: 'Trello analog by BriWS = Brello. ',
         link: 'https://braivs.github.io/iti_brello',
-        img: {backgroundImage: `url(${todoImage})`}
-
+        img: {backgroundImage: `url(${todoImage})`},
+        presentationLink: 'https://youtu.be/TQIYwBnhzYg'
     },
     {
         id: v1(),
