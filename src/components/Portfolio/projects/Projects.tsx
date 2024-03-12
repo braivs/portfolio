@@ -38,14 +38,15 @@ const projectsSPA: Array<ProjectsArray> = [
         description: 'App for crypto game with chat',
         link: 'https://braivs.github.io/keres_fork',
         img: {backgroundImage: `url(${keresverse})`},
-        presentationLink: 'https://youtu.be/1ZaShwRJKoQ'
+        presentationLink: 'https://youtu.be/vKy8Jx32-2c'
     },
     {
         id: v1(),
         title: 'HydroBridge (Inactive)',
         description: 'An app for converting HYDRO tokens from one chain to another. Currently, this app only works partially because the smart contracts for this token are not operational.',
         link: 'https://braivs.github.io/bridge_fork',
-        img: {backgroundImage: `url(${hydro_bridge})`}
+        img: {backgroundImage: `url(${hydro_bridge})`},
+        presentationLink: 'https://youtu.be/JLLg7XZ_q1A'
     },
     {
         id: v1(),
