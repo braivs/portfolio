@@ -26,11 +26,11 @@ import {Fade} from "react-awesome-reveal";
 const projectsSPA: Array<ProjectsArray> = [
     {
         id: v1(),
-        title: 'Flashcards',
+        title: 'BrightLists',
         description: 'NEW app for learning cards. Done with Vite, Redux toolkit, RTK Query.',
         link: 'https://iti-flashcards.vercel.app',
         img: {backgroundImage: `url(${flashcards})`},
-        presentationLink: 'https://youtu.be/UHknyKFtRVk'
+        presentationLink: 'https://youtu.be/o6dkzYoA0DU'
     },
     {
         id: v1(),
@@ -79,7 +79,14 @@ const projectsSPA: Array<ProjectsArray> = [
         link: 'https://braivs.github.io/iti_counter',
         img: {backgroundImage: `url(${counterImage})`},
         presentationLink: 'https://www.youtube.com/watch?v=WB4ebCmR1A4'
-    }
+    },
+    {
+        id: v1(),
+        title: 'Namazon Club',
+        description: 'Upgraded NamazonClub from "HTML, CSS, JS" version, done on React. "Club of female wrestling. With video shop."',
+        link: 'https:/braivs.github.io/namazonClub',
+        img: {backgroundImage: `url(${namazonImage})`}
+    },
 ]
 
 const projectsClassic = [
@@ -87,7 +94,7 @@ const projectsClassic = [
         id: v1(),
         title: 'Namazon Club',
         description: 'Club of female wrestling. With video shop.',
-        link: 'http://www.namazonclub.ru/',
+        link: 'https:/braivs.github.io/namazonClub',
         img: {backgroundImage: `url(${namazonImage})`}
     },
     {
