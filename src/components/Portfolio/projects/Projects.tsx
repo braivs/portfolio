@@ -84,7 +84,7 @@ const projectsSPA: Array<ProjectsArray> = [
         id: v1(),
         title: 'Namazon Club',
         description: 'Upgraded NamazonClub from "HTML, CSS, JS" version, done on React. "Club of female wrestling. With video shop."',
-        link: 'https:/braivs.github.io/namazonClub',
+        link: 'https://namazon.club',
         img: {backgroundImage: `url(${namazonImage})`}
     },
 ]
@@ -94,7 +94,7 @@ const projectsClassic = [
         id: v1(),
         title: 'Namazon Club',
         description: 'Club of female wrestling. With video shop.',
-        link: 'https:/braivs.github.io/namazonClub',
+        link: 'https://braivs.github.io/namazonClub/',
         img: {backgroundImage: `url(${namazonImage})`}
     },
     {
