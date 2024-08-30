@@ -20,12 +20,14 @@ import postman from '../../../assets/image/logos/postman.png'
 import styled from '../../../assets/image/logos/styled-components.png'
 import firebase from '../../../assets/image/logos/firebase.png'
 import web3 from '../../../assets/image/logos/web3.png'
+import nextJS from '../../../assets/image/logos/nextJS.jpg'
 import {Fade} from "react-awesome-reveal"
 
 
 const skills = [
     {id: v1(), title: 'React', logo: logoReact,},
     {id: v1(), title: 'Redux', logo: logoRedux,},
+    {id: v1(), title: 'NextJS', logo: nextJS,},
     {id: v1(), title: 'RTK Query', logo: logoRedux,},
     {id: v1(), title: 'TypeScript', logo: logoTS},
     {id: v1(), title: 'JavaScript', logo: logoJS},
