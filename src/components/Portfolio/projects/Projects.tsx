@@ -18,6 +18,7 @@ import carsBodyPartsImg from '../../../assets/image/sitesClassic/carsBodyParts.j
 import BlitzImg from '../../../assets/image/sitesClassic/Blitz.jpg'
 import CounselImg from '../../../assets/image/sitesClassic/Counsel.jpg'
 import CooperImg from '../../../assets/image/sitesClassic/Cooper.jpg'
+import NamazonNewDesign from '../../../assets/image/sitesSPA/namazonNewDesign.jpg'
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import './react-tabs.scss';
 import {Fade} from "react-awesome-reveal";
@@ -79,6 +80,13 @@ const projectsSPA: Array<ProjectsArray> = [
         link: 'https://braivs.github.io/iti_counter',
         img: {backgroundImage: `url(${counterImage})`},
         presentationLink: 'https://www.youtube.com/watch?v=WB4ebCmR1A4'
+    },
+    {
+        id: v1(),
+        title: 'Namazon Club NextJS upgrade',
+        description: 'Next.js version of NamazonClub. Beta version.',
+        link: 'https://namazon.club',
+        img: {backgroundImage: `url(${NamazonNewDesign})`}
     },
     {
         id: v1(),
