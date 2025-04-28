@@ -13,7 +13,7 @@ export const CV = () => {
   return (
     <div className={s.cv}>
       <Button title={'See portfolio'} className={s.buttonAdditional} onClick={onClick}/>
-      <iframe className={s.iframe} src={'./CV_Braivs_Ustiugov_Frontend_React.pdf'} title={'CV'} />
+      <iframe className={s.iframe} src={'./CV_Braivs_Ustiugov_Frontend_React_Next.pdf'} title={'CV'} />
     </div>
   )
 }

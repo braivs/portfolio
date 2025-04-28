@@ -85,7 +85,7 @@ const projectsSPA: Array<ProjectsArray> = [
         id: v1(),
         title: 'Namazon Club NextJS upgrade',
         description: 'Next.js version of NamazonClub. Beta version.',
-        link: 'https://namazon.club',
+        link: 'https://namazon-new-disign.vercel.app',
         img: {backgroundImage: `url(${NamazonNewDesign})`}
     },
     {
