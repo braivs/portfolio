@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a76e9232.css",
-    "main.js": "/portfolio/static/js/main.48046b12.js",
+    "main.css": "/portfolio/static/css/main.7509eef0.css",
+    "main.js": "/portfolio/static/js/main.85926342.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/namazonNewDesign.jpg": "/portfolio/static/media/namazonNewDesign.b20b5b51c73f3b3d2f90.jpg",
     "static/media/keresverse.jpg": "/portfolio/static/media/keresverse.1da6feff43a4bacae971.jpg",
     "static/media/GoaExcursions.jpg": "/portfolio/static/media/GoaExcursions.7a95d58c282908d9ac8a.jpg",
     "static/media/carsBodyParts.jpg": "/portfolio/static/media/carsBodyParts.3df9b6567407e6aab52e.jpg",
     "static/media/Counsel.jpg": "/portfolio/static/media/Counsel.b1b2e2ca42d9acb0a1ad.jpg",
     "static/media/djStore.jpg": "/portfolio/static/media/djStore.7de99dfc8afd99c28ef5.jpg",
+    "static/media/flashcards.jpg": "/portfolio/static/media/flashcards.e690d34a2ddf7b718fc7.jpg",
     "static/media/hydro_bridge.jpg": "/portfolio/static/media/hydro_bridge.503c7ded2ffd6607e00a.jpg",
     "static/media/namazon.jpg": "/portfolio/static/media/namazon.c8524d4f9ae05f4ce45f.jpg",
     "static/media/Cooper.jpg": "/portfolio/static/media/Cooper.41f8cfd79de9c4ce552d.jpg",
@@ -25,16 +27,17 @@
     "static/media/jest.png": "/portfolio/static/media/jest.cb8f6580b1391309ac0d.png",
     "static/media/formik.png": "/portfolio/static/media/formik.74f933e343ea353c9d11.png",
     "static/media/material_ui.png": "/portfolio/static/media/material_ui.e8b505b63aacbebdabb0.png",
+    "static/media/nextJS.jpg": "/portfolio/static/media/nextJS.12c453f5a1a11c2392dc.jpg",
     "static/media/styled-components.png": "/portfolio/static/media/styled-components.4bbaf47407e847c3e3ad.png",
     "static/media/axios.jpg": "/portfolio/static/media/axios.79e378a148722ab3386b.jpg",
     "static/media/close.png": "/portfolio/static/media/close.008b33675c2ecd943328.png",
     "index.html": "/portfolio/index.html",
-    "main.a76e9232.css.map": "/portfolio/static/css/main.a76e9232.css.map",
-    "main.48046b12.js.map": "/portfolio/static/js/main.48046b12.js.map",
+    "main.7509eef0.css.map": "/portfolio/static/css/main.7509eef0.css.map",
+    "main.85926342.js.map": "/portfolio/static/js/main.85926342.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a76e9232.css",
-    "static/js/main.48046b12.js"
+    "static/css/main.7509eef0.css",
+    "static/js/main.85926342.js"
   ]
 }
