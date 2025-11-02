@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7509eef0.css",
-    "main.js": "/portfolio/static/js/main.85926342.js",
+    "main.js": "/portfolio/static/js/main.58d5366b.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/namazonNewDesign.jpg": "/portfolio/static/media/namazonNewDesign.b20b5b51c73f3b3d2f90.jpg",
     "static/media/keresverse.jpg": "/portfolio/static/media/keresverse.1da6feff43a4bacae971.jpg",
@@ -33,11 +33,11 @@
     "static/media/close.png": "/portfolio/static/media/close.008b33675c2ecd943328.png",
     "index.html": "/portfolio/index.html",
     "main.7509eef0.css.map": "/portfolio/static/css/main.7509eef0.css.map",
-    "main.85926342.js.map": "/portfolio/static/js/main.85926342.js.map",
+    "main.58d5366b.js.map": "/portfolio/static/js/main.58d5366b.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7509eef0.css",
-    "static/js/main.85926342.js"
+    "static/js/main.58d5366b.js"
   ]
 }
