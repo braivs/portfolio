@@ -40,7 +40,7 @@ const projectsSPA: Array<ProjectsArray> = [
     id: v1(),
     title: 'ZenexCoin',
     description: 'Landing for ZenexHub.',
-    link: 'https://zenexhub.com/',
+    link: 'https://zenex-coin.com/',
     img: {backgroundImage: `url(${zenexcoin})`},
   },
   {
