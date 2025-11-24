@@ -84,15 +84,15 @@ const projectsSPA: Array<ProjectsArray> = [
     {
         id: v1(),
         title: 'Namazon Club NextJS upgrade',
-        description: 'Next.js version of NamazonClub. Beta version.',
-        link: 'https://namazon-new-disign.vercel.app',
+        description: 'Next.js version of NamazonClub. In progress.',
+        link: 'https://namazon.club',
         img: {backgroundImage: `url(${NamazonNewDesign})`}
     },
     {
         id: v1(),
         title: 'Namazon Club',
         description: 'Upgraded NamazonClub from "HTML, CSS, JS" version, done on React. "Club of female wrestling. With video shop."',
-        link: 'https://namazon.club',
+        link: 'https://braivs.github.io/namazonclub_react',
         img: {backgroundImage: `url(${namazonImage})`}
     },
 ]
