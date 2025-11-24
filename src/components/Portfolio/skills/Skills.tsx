@@ -21,6 +21,7 @@ import styled from '../../../assets/image/logos/styled-components.png'
 import firebase from '../../../assets/image/logos/firebase.png'
 import web3 from '../../../assets/image/logos/web3.png'
 import nextJS from '../../../assets/image/logos/nextJS.jpg'
+import docker from '../../../assets/image/logos/docker.png'
 import {Fade} from "react-awesome-reveal"
 
 
@@ -38,6 +39,7 @@ const skills = [
     {id: v1(), title: 'Formik', logo: formik,},
     {id: v1(), title: 'Material-UI', logo: materialUI,},
     {id: v1(), title: 'Git', logo: git,},
+    {id: v1(), title: 'Docker', logo: docker,},
     {id: v1(), title: 'Postman', logo: postman,},
     {id: v1(), title: 'HTML', logo: logoHTML,},
     {id: v1(), title: 'CSS', logo: logoCSS,},
