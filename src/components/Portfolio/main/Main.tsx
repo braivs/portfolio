@@ -24,7 +24,7 @@ export function Main() {
                     <div className={s.text}>
                         <h1>
                             <ReactTypingEffect
-                                text={["HI, I`M REACT DEVELOPER"]}
+                                text={["HI, I`M REACT DEVELOPER", "HI, I`M NEXT.JS DEVELOPER"]}
                             />
                         </h1>
                         <h2>
