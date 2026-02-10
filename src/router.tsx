@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/cv_web3',
-    element: <CV pdfFileName="СV_Braivs_Ustiugov_Frontend_React_Next_Web3.pdf" />,
+    element: <CV pdfFileName="CV_Braivs_Ustiugov_Frontend_React_Next_Web3.pdf" />,
   },
 ])
 
