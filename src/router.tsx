@@ -11,6 +11,10 @@ const router = createBrowserRouter([
     path: '/cv',
     element: <CV />,
   },
+  {
+    path: '/cv_web3',
+    element: <CV pdfFileName="СV_Braivs_Ustiugov_Frontend_React_Next_Web3.pdf" />,
+  },
 ])
 
 export const Router = () => {

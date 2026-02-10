@@ -2,7 +2,11 @@ import s from './CV.module.scss'
 import {Button} from "../../common/components/Button/Button"
 import {useNavigate} from "react-router-dom"
 
-export const CV = () => {
+type CVProps = {
+  pdfFileName?: string
+}
+
+export const CV = ({pdfFileName = 'CV_Braivs_Ustiugov_Frontend_React_Next.pdf'}: CVProps) => {
 
   const navigate = useNavigate();
 
@@ -13,7 +17,7 @@ export const CV = () => {
   return (
     <div className={s.cv}>
       <Button title={'See portfolio'} className={s.buttonAdditional} onClick={onClick}/>
-      <iframe className={s.iframe} src={'./CV_Braivs_Ustiugov_Frontend_React_Next.pdf'} title={'CV'} />
+      <iframe className={s.iframe} src={`./${pdfFileName}`} title={'CV'} />
     </div>
   )
 }
