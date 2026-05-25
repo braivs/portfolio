@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.7509eef0.css",
-    "main.js": "/static/js/main.af3759ab.js",
+    "main.js": "/static/js/main.4d195456.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/namazonNewDesign.jpg": "/static/media/namazonNewDesign.b20b5b51c73f3b3d2f90.jpg",
     "static/media/keresverse.jpg": "/static/media/keresverse.1da6feff43a4bacae971.jpg",
     "static/media/GoaExcursions.jpg": "/static/media/GoaExcursions.7a95d58c282908d9ac8a.jpg",
+    "static/media/namazonClub.jpg": "/static/media/namazonClub.504418de5fe43c799c2a.jpg",
     "static/media/zenexcoin.jpg": "/static/media/zenexcoin.68fb4ad450e6e9026ad0.jpg",
     "static/media/carsBodyParts.jpg": "/static/media/carsBodyParts.3df9b6567407e6aab52e.jpg",
     "static/media/zenexhub.jpg": "/static/media/zenexhub.a60778cc74c320162801.jpg",
@@ -21,6 +21,7 @@
     "static/media/social-network.jpg": "/static/media/social-network.b91bced192e924605172.jpg",
     "static/media/myPhoto.jpg": "/static/media/myPhoto.aa0ef597e0f7f148f810.jpg",
     "static/media/cards.jpg": "/static/media/cards.9cdf18547b63032be5f6.jpg",
+    "static/media/brightSlots.jpg": "/static/media/brightSlots.e06eda7cb1d2dda4a307.jpg",
     "static/media/treasurehunt.jpg": "/static/media/treasurehunt.5dd7e4641a246add5cd0.jpg",
     "static/media/counter.jpg": "/static/media/counter.6fabce8f5393f25836ae.jpg",
     "static/media/todolist.jpg": "/static/media/todolist.40f82faae1e989e6ae91.jpg",
@@ -37,11 +38,11 @@
     "static/media/close.png": "/static/media/close.008b33675c2ecd943328.png",
     "index.html": "/index.html",
     "main.7509eef0.css.map": "/static/css/main.7509eef0.css.map",
-    "main.af3759ab.js.map": "/static/js/main.af3759ab.js.map",
+    "main.4d195456.js.map": "/static/js/main.4d195456.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7509eef0.css",
-    "static/js/main.af3759ab.js"
+    "static/js/main.4d195456.js"
   ]
 }
