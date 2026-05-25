@@ -42,7 +42,7 @@ const projectsSPA: Array<ProjectsArray> = [
     id: v1(),
     title: 'Bright Slots',
     description: 'My PixiJS game prototype',
-    link: 'https://zenexhub.com/',
+    link: 'https://bright-slots.vercel.app',
     img: {backgroundImage: `url(${brightSlots})`},
   },
   {
