@@ -23,12 +23,28 @@ import zenexhub from '../../../assets/image/sitesSPA/zenexhub.jpg'
 import zenexcoin from '../../../assets/image/sitesSPA/zenexcoin.jpg'
 import treasurehunt from '../../../assets/image/sitesSPA/treasurehunt.jpg'
 import token2049 from '../../../assets/image/sitesSPA/token2049.jpg'
+import brightSlots from '../../../assets/image/sitesSPA/brightSlots.jpg'
+import namazonClub from '../../../assets/image/sitesSPA/namazonClub.jpg'
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import './react-tabs.scss';
 import {Fade} from "react-awesome-reveal";
 
 
 const projectsSPA: Array<ProjectsArray> = [
+  {
+    id: v1(),
+    title: 'Namazon Club',
+    description: 'Video сlub of female and mixed wrestling',
+    link: 'https://namazon.club',
+    img: {backgroundImage: `url(${namazonClub})`}
+  },
+  {
+    id: v1(),
+    title: 'Bright Slots',
+    description: 'My PixiJS game prototype',
+    link: 'https://zenexhub.com/',
+    img: {backgroundImage: `url(${brightSlots})`},
+  },
   {
     id: v1(),
     title: 'ZenexHub',
@@ -112,13 +128,6 @@ const projectsSPA: Array<ProjectsArray> = [
     link: 'https://braivs.github.io/iti_counter',
     img: {backgroundImage: `url(${counterImage})`},
     presentationLink: 'https://www.youtube.com/watch?v=WB4ebCmR1A4'
-  },
-  {
-    id: v1(),
-    title: 'Namazon Club NextJS upgrade.',
-    description: 'Next.js version of NamazonClub.',
-    link: 'https://namazon.club',
-    img: {backgroundImage: `url(${NamazonNewDesign})`}
   },
   {
     id: v1(),
