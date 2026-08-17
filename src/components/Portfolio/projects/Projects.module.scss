@@ -80,12 +80,14 @@
         .projectsContainer {
             .projects {
                 .tabs {
+                    @include flex(column, center, stretch, nowrap);
 
                     .tabsContent {
-                        @include flex(row, center, stretch, nowrap);
+                        width: 100%;
 
                         .tabElement {
-
+                            width: 100%;
+                            @include flex(column, flex-start, stretch, nowrap);
                         }
                     }
                 }
