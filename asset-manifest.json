@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.30f28cbe.css",
-    "main.js": "/static/js/main.3cceb581.js",
+    "main.css": "/static/css/main.0ae6fdae.css",
+    "main.js": "/static/js/main.9591a595.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/keresverse.jpg": "/static/media/keresverse.1da6feff43a4bacae971.jpg",
     "static/media/GoaExcursions.jpg": "/static/media/GoaExcursions.7a95d58c282908d9ac8a.jpg",
@@ -37,12 +37,12 @@
     "static/media/axios.jpg": "/static/media/axios.79e378a148722ab3386b.jpg",
     "static/media/close.png": "/static/media/close.008b33675c2ecd943328.png",
     "index.html": "/index.html",
-    "main.30f28cbe.css.map": "/static/css/main.30f28cbe.css.map",
-    "main.3cceb581.js.map": "/static/js/main.3cceb581.js.map",
+    "main.0ae6fdae.css.map": "/static/css/main.0ae6fdae.css.map",
+    "main.9591a595.js.map": "/static/js/main.9591a595.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30f28cbe.css",
-    "static/js/main.3cceb581.js"
+    "static/css/main.0ae6fdae.css",
+    "static/js/main.9591a595.js"
   ]
 }
