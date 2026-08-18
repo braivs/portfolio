@@ -34,8 +34,8 @@
                     width: 100%;
 
                     .tabElement {
-                        @include flex(row, space-between, stretch, wrap);
-
+                        @include flex(row, center, stretch, wrap);
+                        column-gap: 16px;
                     }
                 }
             }
