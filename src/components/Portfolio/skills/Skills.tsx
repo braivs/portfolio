@@ -33,7 +33,7 @@ const skills = [
     {id: v1(), title: 'TypeScript', logo: logoTS},
     {id: v1(), title: 'JavaScript', logo: logoJS},
     {id: v1(), title: 'Firebase', logo: firebase},
-    {id: v1(), title: 'REST API / AXIOS', logo: axios,},
+    {id: v1(), title: 'AXIOS', logo: axios,},
     {id: v1(), title: 'Unit Tests', logo: jest,},
     {id: v1(), title: 'Storybook', logo: storyBook,},
     {id: v1(), title: 'Formik', logo: formik,},
