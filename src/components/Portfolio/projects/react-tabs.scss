@@ -1,4 +1,4 @@
-@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
 
 .react-tabs {
 
@@ -6,23 +6,23 @@
         display: flex;
         justify-content: center;
         margin: 0;
-        padding: 0 0 36px;
+        padding: 0 0 16px;
     }
 
     &__tab {
         list-style: none;
-        padding: 0 15px 5px;
-        cursor: pointer;
-        color: rgba(0, 0, 0, 0.4);
-        font-weight: bold;
+        @include tabLikeItem;
+        border: 3px solid transparent;
+        padding: 6px 16px;
+
+        // Browser default focus outline stacks on the yellow selected border until the tab blurs
+        &:focus,
+        &:focus-visible {
+            outline: none;
+        }
 
         &--selected {
             border-color: $primaryColor;
-            border-bottom: 3px solid $primaryColor;
-            color: $textColor;
-        }
-
-        &:hover {
             color: $textColor;
         }
     }

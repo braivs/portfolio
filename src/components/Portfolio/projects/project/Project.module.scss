@@ -37,6 +37,25 @@
     .projectInfo {
         padding: 2.25rem 1.25rem;
 
+        .categoryLabel {
+            @include mixins.text($titleFontFamily, 12px, 1.5);
+            font-weight: 700;
+            letter-spacing: 0.7px;
+            margin-bottom: 8px;
+        }
+
+        .pet {
+            color: #0E63FF;
+        }
+
+        .commercial {
+            color: #1a7f37;
+        }
+
+        .skeleton {
+            color: #888;
+        }
+
         .projectTitle {
             @include mixins.text($titleFontFamily, 18px, 1.8);
         }

@@ -16,6 +16,11 @@ export function Project(props: ProjectProps) {
             </div>
 
             <div className={s.projectInfo}>
+                {props.category && (
+                    <div className={clsx(s.categoryLabel, categoryClass[props.category])}>
+                        {categoryLabels[props.category]}
+                    </div>
+                )}
                 <h3 className={s.projectTitle}>{props.title}</h3><br/>
                 <div className={s.description}>{props.description}</div>
             </div>
@@ -23,11 +28,26 @@ export function Project(props: ProjectProps) {
     )
 }
 
+export type ProjectCategory = 'PET' | 'COMMERCIAL' | 'SKELETON'
+
 export type ProjectProps = {
     title: string
     description: string
     link: string
     style: React.CSSProperties
     presentationLink?: string
+    category?: ProjectCategory
+}
+
+export const categoryLabels: Record<ProjectCategory, string> = {
+    PET: 'Pet',
+    COMMERCIAL: 'Commercial',
+    SKELETON: 'Skeleton',
+}
+
+const categoryClass: Record<ProjectCategory, string> = {
+    PET: s.pet,
+    COMMERCIAL: s.commercial,
+    SKELETON: s.skeleton,
 }
 

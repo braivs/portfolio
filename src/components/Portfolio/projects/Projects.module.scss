@@ -17,6 +17,19 @@
                 @include flex(column, center, center, nowrap);
                 width: 100%;
 
+                .categoryFilter {
+                    @include flex(row, center, center, wrap);
+                    padding-bottom: 36px;
+
+                    .category {
+                        @include tabLikeItem;
+
+                        &.selected {
+                            @include tabLikeSelected;
+                        }
+                    }
+                }
+
                 .tabsContent {
                     width: 100%;
 

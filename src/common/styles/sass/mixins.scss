@@ -44,3 +44,20 @@
 
 }
 
+@mixin tabLikeItem {
+    padding: 0 15px 5px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+
+    &:hover {
+        color: $textColor;
+    }
+}
+
+@mixin tabLikeSelected {
+    border-color: $primaryColor;
+    border-bottom: 3px solid $primaryColor;
+    color: $textColor;
+}
+
