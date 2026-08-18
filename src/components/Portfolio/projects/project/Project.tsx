@@ -7,10 +7,10 @@ export function Project(props: ProjectProps) {
     return (
         <div className={s.project}>
             <div className={s.buttonContainer} style={props.style}>
-                <div className={s.image} onClick={() => window.open(props.link, "_blank")}>
+                <div className={s.buttonWrapper} onClick={() => window.open(props.link, "_blank")}>
                     <Button title={'Check implemented'} className={s.button}/>
                 </div>
-                {props.presentationLink && <div onClick={() => window.open(props.presentationLink, "_blank")}>
+                {props.presentationLink && <div className={s.buttonWrapper} onClick={() => window.open(props.presentationLink, "_blank")}>
                     <Button title={'Watch overview'} className={clsx(s.button, s.secondButton)}/>
                 </div> }
             </div>
