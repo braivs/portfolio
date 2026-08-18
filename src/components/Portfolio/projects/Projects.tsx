@@ -34,8 +34,8 @@ type SelectedCategory = 'ALL' | ProjectCategory
 
 const categoryOptions: { label: string, value: SelectedCategory }[] = [
   {label: 'All', value: 'ALL'},
-  {label: categoryLabels.PET, value: 'PET'},
   {label: categoryLabels.COMMERCIAL, value: 'COMMERCIAL'},
+  {label: categoryLabels.PET, value: 'PET'},
   {label: categoryLabels.SKELETON, value: 'SKELETON'},
 ]
 
@@ -231,6 +231,9 @@ const projectsClassic: Array<ProjectsArray> = [
 
 export function Projects() {
   const [selectedCategory, setSelectedCategory] = useState<SelectedCategory>('ALL')
+  // Use the active tab to calculate project counts
+  const [selectedTabIndex, setSelectedTabIndex] = useState(0)
+  const activeProjects = selectedTabIndex === 0 ? projectsSPA : projectsClassic
 
   return (
     <div className={s.projectsBlock} id={'projects'}>
@@ -238,7 +241,11 @@ export function Projects() {
         <div className={s.projectsContainer}>
           <Title text={'Projects'}/>
           <div className={s.projects}>
-            <Tabs className={s.tabs}>
+            <Tabs
+              className={s.tabs}
+              selectedIndex={selectedTabIndex}
+              onSelect={setSelectedTabIndex}
+            >
               <TabList>
                 <Tab>SPA React, Next</Tab>
                 <Tab>HTML, CSS, JS</Tab>
@@ -250,7 +257,7 @@ export function Projects() {
                     className={clsx(s.category, selectedCategory === option.value && s.selected)}
                     onClick={() => setSelectedCategory(option.value)}
                   >
-                    {option.label}
+                    {option.label} ({countProjects(activeProjects, option.value)})
                   </div>
                 ))}
               </div>
@@ -279,12 +286,16 @@ export function Projects() {
   );
 }
 
-function filterProjects(projects: Array<ProjectsArray>, selectedCategory: SelectedCategory) {
+const filterProjects = (projects: Array<ProjectsArray>, selectedCategory: SelectedCategory) => {
   if (selectedCategory === 'ALL') {
     return projects
   }
 
   return projects.filter(project => project.category === selectedCategory)
+}
+
+const countProjects = (projects: Array<ProjectsArray>, category: SelectedCategory) => {
+  return filterProjects(projects, category).length
 }
 
 type ProjectsArray = Omit<ProjectProps, 'style'> & { id: string, img: { backgroundImage: string } }
