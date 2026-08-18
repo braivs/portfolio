@@ -5,6 +5,7 @@ import {Skills} from "./skills/Skills"
 import {Projects} from "./projects/Projects"
 import {Contacts} from "./contacts/Contacts"
 import {Footer} from "./footer/Footer"
+import {ScrollToTop} from "../../common/components/scrollToTop/ScrollToTop"
 
 export const Portfolio = () => {
   return (
@@ -15,6 +16,7 @@ export const Portfolio = () => {
       <Projects />
       <Contacts />
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }
