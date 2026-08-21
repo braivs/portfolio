@@ -21,7 +21,7 @@ export function Project(props: ProjectProps) {
                         {categoryLabels[props.category]}
                     </div>
                 )}
-                <h3 className={s.projectTitle}>{props.title}</h3><br/>
+                <h3 className={s.projectTitle}>{props.title}</h3>
                 <div className={s.description}>{props.description}</div>
             </div>
         </div>

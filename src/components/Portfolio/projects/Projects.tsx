@@ -43,16 +43,8 @@ const categoryOptions: { label: string, value: SelectedCategory }[] = [
 const projectsSPA: Array<ProjectsArray> = [
   {
     id: v1(),
-    title: 'Namazon Club',
-    description: 'Video сlub of female and mixed wrestling',
-    link: 'https://namazon.club',
-    img: {backgroundImage: `url(${namazonClub})`},
-    category: 'PET',
-  },
-  {
-    id: v1(),
     title: 'Bright Slots',
-    description: 'My PixiJS game prototype',
+    description: 'PixiJS game.',
     link: 'https://bright-slots.vercel.app',
     img: {backgroundImage: `url(${brightSlots})`},
     category: 'SKELETON',
@@ -88,6 +80,14 @@ const projectsSPA: Array<ProjectsArray> = [
     link: 'https://play.zenex.fun',
     img: {backgroundImage: `url(${treasurehunt})`},
     category: 'COMMERCIAL',
+  },
+  {
+    id: v1(),
+    title: 'Namazon Club',
+    description: 'Video сlub of female and mixed wrestling.',
+    link: 'https://namazon.club',
+    img: {backgroundImage: `url(${namazonClub})`},
+    category: 'PET',
   },
   {
     id: v1(),

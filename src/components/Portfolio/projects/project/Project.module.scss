@@ -96,6 +96,7 @@
             }
 
             .description {
+                margin-top: 10px;
                 @include mixins.text($textFontFamily, 16px, 1.5);
             }
         }
