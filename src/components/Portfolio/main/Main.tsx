@@ -24,11 +24,11 @@ export function Main() {
                     <div className={s.text}>
                         <h1>
                             <ReactTypingEffect
-                                text={["HI, I`M REACT DEVELOPER", "HI, I`M NEXT.JS DEVELOPER"]}
+                                text={["Hi, I'm a React developer", "Hi, I'm a Next.js developer"]}
                             />
                         </h1>
                         <h2>
-                            BRAIVS USTIUGOV
+                            Braivs Ustiugov
                         </h2>
                     </div>
                     <div className={s.cV_Photo}>
