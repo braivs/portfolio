@@ -32,7 +32,7 @@ export function Main() {
                         </h2>
                     </div>
                     <div className={s.cV_Photo}>
-                        <NavLink to={'/cv'}><div className={s.cv}><b>CV <br/> here</b></div></NavLink>
+                        <NavLink to={'/cv'}><div className={s.cv}><b>View <br/> CV</b></div></NavLink>
                         <Tilt>
                             <div className={s.imgBlock}>
                                 <img src={photo} alt="myPhoto" className={s.img}/>
