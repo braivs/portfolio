@@ -23,9 +23,13 @@ export function Main() {
                 <Fade>
                     <div className={s.text}>
                         <h1>
-                            <ReactTypingEffect
-                                text={["Hi, I'm a React developer", "Hi, I'm a Next.js developer"]}
-                            />
+                           {/* <ReactTypingEffect
+                                // text={["Hi, I'm a React developer", "Hi, I'm a Next.js developer"]}
+                                text={["Hi, I'm a Frontend Developer", "Hi, I'm a Full Stack Web Developer"]}
+                                speed={30}
+                                eraseSpeed={30}
+                            />*/}
+                            Hi, I'm a Frontend/Full Stack Web Developer
                         </h1>
                         <h2>
                             Braivs Ustiugov
