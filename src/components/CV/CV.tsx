@@ -6,7 +6,7 @@ type CVProps = {
   pdfFileName?: string
 }
 
-export const CV = ({pdfFileName = 'CV_Braivs_Ustiugov_Frontend_React_Next.js_iGaming.pdf'}: CVProps) => {
+export const CV = ({pdfFileName = 'CV_Braivs_Ustiugov_Frontend_Full_Stack_iGaming.pdf'}: CVProps) => {
 
   const navigate = useNavigate();
 
