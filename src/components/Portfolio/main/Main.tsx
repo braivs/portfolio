@@ -29,7 +29,7 @@ export function Main() {
                                 speed={30}
                                 eraseSpeed={30}
                             />*/}
-                            Hi, I'm an iGaming Frontend / Full-Stack Engineer.
+                            Hi, I'm an iGaming Frontend/Full-Stack Engineer.
                         </h1>
                         <h2>
                             Braivs Ustiugov
