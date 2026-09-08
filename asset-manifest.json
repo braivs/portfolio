@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.251e4ba3.css",
-    "main.js": "/static/js/main.914d243a.js",
+    "main.js": "/static/js/main.d02770be.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/keresverse.jpg": "/static/media/keresverse.1da6feff43a4bacae971.jpg",
     "static/media/GoaExcursions.jpg": "/static/media/GoaExcursions.7a95d58c282908d9ac8a.jpg",
@@ -60,11 +60,11 @@
     "static/media/Axios.svg": "/static/media/Axios.a1544b1e502776976c6912c28ffd9c61.svg",
     "static/media/radix-ui.svg": "/static/media/radix-ui.749264dcc9cf07c8670ea7d7ca1a8f06.svg",
     "main.251e4ba3.css.map": "/static/css/main.251e4ba3.css.map",
-    "main.914d243a.js.map": "/static/js/main.914d243a.js.map",
+    "main.d02770be.js.map": "/static/js/main.d02770be.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.251e4ba3.css",
-    "static/js/main.914d243a.js"
+    "static/js/main.d02770be.js"
   ]
 }
