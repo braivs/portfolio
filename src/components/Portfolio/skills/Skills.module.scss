@@ -3,40 +3,37 @@
 
 .skillsBlock {
     @include block($bgSecondColor);
+    overflow-x: hidden;
 
-    .skillsContainer {
-        @include container();
+    .skillsInner {
+        width: 100%;
+        @include flex(column, center, center, nowrap);
+    }
+
+    .section {
+        width: 100%;
         @include flex(column, center, center, nowrap);
 
-        .section {
-            width: 100%;
-            @include flex(column, center, center, nowrap);
-
-            &:not(:first-child) {
-                margin-top: 56px;
-            }
-
-            .carouselWrap {
-                width: 100%;
-                margin-top: 30px;
-            }
-
-            .carousel {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-            }
+        &:not(:first-child) {
+            margin-top: 56px;
         }
     }
 
-    /*@media screen and (max-width: $lg) {
-        .skillsContainer {
-            .skills {
-                @include flex(column, center, center, nowrap);
-            }
-        }
-    }*/
+    .titleWrap {
+        @include container();
+        @include flex(column, center, center, nowrap);
+    }
 
+    .carouselWrap {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
 }
 
 @media only screen and (max-width: 1536px) { // 1200px - 1536px
@@ -47,14 +44,8 @@
 
 @media only screen and (max-width: 600px) { // 350px - 600px
     .skillsBlock {
-        .skillsContainer {
-            .section {
-                .carousel {
-                    gap: 4px;
-                }
-            }
+        .carousel {
+            gap: 4px;
         }
     }
 }
-
-

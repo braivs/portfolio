@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import s from './Skills.module.scss'
 import {Skill} from "./skill/Skill"
 import BrightCarousel from '../../../common/components/BrightCarousel/BrightCarousel'
@@ -38,6 +38,8 @@ import radixui from '../../../assets/image/logosColor/radix-ui.svg'
 import restapi from '../../../assets/image/logosColor/rest-api.png'
 import jira from '../../../assets/image/logosColor/jira.svg'
 import csharp from '../../../assets/image/logosColor/csharp.webp'
+import webstorm from '../../../assets/image/logosColor/WebStorm.svg'
+import figma from '../../../assets/image/logosColor/figma.svg'
 import {Fade} from "react-awesome-reveal"
 
 
@@ -78,56 +80,48 @@ const tools = [
     {id: v1(), title: 'Postman', logo: postman},
     {id: v1(), title: 'Storybook', logo: storyBook},
     {id: v1(), title: 'Jira', logo: jira},
+    {id: v1(), title: 'WebStorm', logo: webstorm},
     {id: v1(), title: 'Cursor', logo: cursor},
     {id: v1(), title: 'GitHub Copilot', logo: githubcopilot},
+    {id: v1(), title: 'Figma', logo: figma},
 ]
-
-const useIsMobile = (breakpoint = 600) => {
-    const [isMobile, setIsMobile] = useState(() =>
-        typeof window !== 'undefined' && window.matchMedia(`(max-width: ${breakpoint}px)`).matches
-    )
-
-    useEffect(() => {
-        const mediaQuery = window.matchMedia(`(max-width: ${breakpoint}px)`)
-        const onChange = () => setIsMobile(mediaQuery.matches)
-
-        onChange()
-        mediaQuery.addEventListener('change', onChange)
-        return () => mediaQuery.removeEventListener('change', onChange)
-    }, [breakpoint])
-
-    return isMobile
-}
 
 const skillsSmooth = {active: true, direction: 'right' as const}
 const toolsSmooth = {active: true, direction: 'left' as const}
+const carouselSpeed = 1
 
 export function Skills() {
-    const isMobile = useIsMobile()
-
     return (
         <div className={s.skillsBlock} id={'skills'}>
             <Fade>
-                <div className={s.skillsContainer}>
+                <div className={s.skillsInner}>
                     <div className={s.section}>
-                        <Title text={'Skills'}/>
+                        <div className={s.titleWrap}>
+                            <Title text={'Skills'}/>
+                        </div>
                         <div className={s.carouselWrap}>
                             <BrightCarousel
                                 elements={skills.map(el => <Skill key={el.id} title={el.title} logo={el.logo}/>)}
                                 className={s.carousel}
-                                isControlHidden={isMobile}
-                                smooth={isMobile ? skillsSmooth : undefined}
+                                // full-width track; arrows stay on the 80% column edges, not in flow
+                                floatingControls
+                                interval={carouselSpeed}
+                                smooth={skillsSmooth}
                             />
                         </div>
                     </div>
                     <div className={s.section}>
-                        <Title text={'Tools'}/>
+                        <div className={s.titleWrap}>
+                            <Title text={'Tools'}/>
+                        </div>
                         <div className={s.carouselWrap}>
                             <BrightCarousel
                                 elements={tools.map(el => <Skill key={el.id} title={el.title} logo={el.logo}/>)}
                                 className={s.carousel}
-                                isControlHidden={isMobile}
-                                smooth={isMobile ? toolsSmooth : undefined}
+                                // full-width track; arrows stay on the 80% column edges, not in flow
+                                floatingControls
+                                interval={carouselSpeed}
+                                smooth={toolsSmooth}
                             />
                         </div>
                     </div>

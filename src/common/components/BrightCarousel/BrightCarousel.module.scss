@@ -10,6 +10,30 @@
     .scrollButtonRight {
         margin-left: 8px;
     }
+
+    &.floating {
+        position: relative;
+
+        .scrollButtonLeft,
+        .scrollButtonRight {
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            margin: 0;
+            transform: translateY(-50%);
+            box-shadow: 0 4px 15px rgb(0 0 0 / 20%);
+        }
+
+        // Content column is 80% centered → 10% inset on each side.
+        // Keep the buttons there even though the track is now 100vw.
+        .scrollButtonLeft {
+            left: 10%;
+        }
+
+        .scrollButtonRight {
+            right: 10%;
+        }
+    }
 }
 
 .scrollContainer {
