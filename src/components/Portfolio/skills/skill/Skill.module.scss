@@ -5,6 +5,8 @@
     text-align: center;
     align-items: center;
     padding: 20px;
+    flex-shrink: 0;
+    white-space: normal;
     @include flex(column, center, center, nowrap);
 
     .imgContainer {

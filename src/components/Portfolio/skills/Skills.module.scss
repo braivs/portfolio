@@ -7,16 +7,25 @@
     .skillsContainer {
         @include container();
         @include flex(column, center, center, nowrap);
-        //display: grid;
 
-        .skills {
-            margin-top: 30px;
-            @include flex(row, space-between, stretch, wrap);
+        .section {
+            width: 100%;
+            @include flex(column, center, center, nowrap);
 
-            /*width: 100%;
-            display: grid;
-            grid-template-columns: repeat(5, auto);*/
-            //border: 1px solid red;
+            &:not(:first-child) {
+                margin-top: 56px;
+            }
+
+            .carouselWrap {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .carousel {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
         }
     }
 
@@ -30,49 +39,19 @@
 
 }
 
-@media only screen and (max-width: 1800px) { // 1536px - 1800px
-    .skillsBlock {
-
-        .skillsContainer {
-
-            .skills {
-
-            }
-        }
-    }
-}
-
 @media only screen and (max-width: 1536px) { // 1200px - 1536px
     .skillsBlock {
         padding: 64px 0;
-        .skillsContainer {
-
-            .skills {
-
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1200px) { // 600px - 1200px
-    .skillsBlock {
-
-        .skillsContainer {
-
-            .skills {
-
-            }
-        }
     }
 }
 
 @media only screen and (max-width: 600px) { // 350px - 600px
     .skillsBlock {
-        grid-gap: 20px;
         .skillsContainer {
-
-            .skills {
-
+            .section {
+                .carousel {
+                    gap: 4px;
+                }
             }
         }
     }

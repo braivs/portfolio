@@ -1,0 +1,32 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
+
+.scrollButton {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background: $bgColor;
+    color: $textColor;
+    @include flex(row, center, center, nowrap);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        background: $primaryColor;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+    }
+
+    &:active {
+        background: $accentColor;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .scrollButton {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+}

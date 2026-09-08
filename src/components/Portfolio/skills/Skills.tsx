@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import s from './Skills.module.scss'
 import {Skill} from "./skill/Skill"
+import BrightCarousel from '../../../common/components/BrightCarousel/BrightCarousel'
 import {v1} from "uuid"
 import {Title} from "../../../common/components/title/Title"
 import logoReact from '../../../assets/image/logosColor/react.png'
@@ -50,8 +51,10 @@ const skills = [
     {id: v1(), title: 'Web3', logo: web3},
     {id: v1(), title: 'iGaming', logo: iGaming},
     {id: v1(), title: 'JavaScript', logo: logoJS},
+    {id: v1(), title: 'REST API', logo: restapi},
     {id: v1(), title: 'RTK Query', logo: logoRedux},
     {id: v1(), title: 'WebSockets', logo: websocket},
+    {id: v1(), title: 'Axios', logo: axios},
     {id: v1(), title: 'Reown', logo: reown},
     {id: v1(), title: 'MetaMask', logo: metamask},
     {id: v1(), title: 'HTML5', logo: logoHTML},
@@ -62,31 +65,71 @@ const skills = [
     {id: v1(), title: 'Radix UI', logo: radixui},
     {id: v1(), title: 'Formik', logo: formik},
     {id: v1(), title: 'React Hook Form', logo: reactHookForm},
-    {id: v1(), title: 'Axios', logo: axios},
-    {id: v1(), title: 'REST API', logo: restapi},
     {id: v1(), title: 'Firebase', logo: firebase},
-    {id: v1(), title: 'Git', logo: git},
-    {id: v1(), title: 'Docker', logo: docker},
-    {id: v1(), title: 'Postman', logo: postman},
-    {id: v1(), title: 'Unit Tests', logo: jest},
-    {id: v1(), title: 'Storybook', logo: storyBook},
-    {id: v1(), title: 'Jira', logo: jira},
-    {id: v1(), title: 'Cursor', logo: cursor},
-    {id: v1(), title: 'GitHub Copilot', logo: githubcopilot},
+    {id: v1(), title: 'Unit Tests (Jest)', logo: jest},
     {id: v1(), title: 'C#', logo: csharp},
     {id: v1(), title: 'C++', logo: cplusplus},
     {id: v1(), title: '.NET', logo: dotnet},
 ]
 
+const tools = [
+    {id: v1(), title: 'Git', logo: git},
+    {id: v1(), title: 'Docker', logo: docker},
+    {id: v1(), title: 'Postman', logo: postman},
+    {id: v1(), title: 'Storybook', logo: storyBook},
+    {id: v1(), title: 'Jira', logo: jira},
+    {id: v1(), title: 'Cursor', logo: cursor},
+    {id: v1(), title: 'GitHub Copilot', logo: githubcopilot},
+]
+
+const useIsMobile = (breakpoint = 600) => {
+    const [isMobile, setIsMobile] = useState(() =>
+        typeof window !== 'undefined' && window.matchMedia(`(max-width: ${breakpoint}px)`).matches
+    )
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia(`(max-width: ${breakpoint}px)`)
+        const onChange = () => setIsMobile(mediaQuery.matches)
+
+        onChange()
+        mediaQuery.addEventListener('change', onChange)
+        return () => mediaQuery.removeEventListener('change', onChange)
+    }, [breakpoint])
+
+    return isMobile
+}
+
+const skillsSmooth = {active: true, direction: 'right' as const}
+const toolsSmooth = {active: true, direction: 'left' as const}
+
 export function Skills() {
+    const isMobile = useIsMobile()
 
     return (
         <div className={s.skillsBlock} id={'skills'}>
             <Fade>
                 <div className={s.skillsContainer}>
-                    <Title text={'Skills & Tools'}/>
-                    <div className={s.skills}>
-                        {skills.map(el => <Skill key={el.id} title={el.title} logo={el.logo}/>)}
+                    <div className={s.section}>
+                        <Title text={'Skills'}/>
+                        <div className={s.carouselWrap}>
+                            <BrightCarousel
+                                elements={skills.map(el => <Skill key={el.id} title={el.title} logo={el.logo}/>)}
+                                className={s.carousel}
+                                isControlHidden={isMobile}
+                                smooth={isMobile ? skillsSmooth : undefined}
+                            />
+                        </div>
+                    </div>
+                    <div className={s.section}>
+                        <Title text={'Tools'}/>
+                        <div className={s.carouselWrap}>
+                            <BrightCarousel
+                                elements={tools.map(el => <Skill key={el.id} title={el.title} logo={el.logo}/>)}
+                                className={s.carousel}
+                                isControlHidden={isMobile}
+                                smooth={isMobile ? toolsSmooth : undefined}
+                            />
+                        </div>
                     </div>
                 </div>
             </Fade>

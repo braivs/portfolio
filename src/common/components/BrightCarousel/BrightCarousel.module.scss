@@ -1,0 +1,30 @@
+.brightCarousel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .scrollButtonLeft {
+        margin-right: 8px;
+    }
+
+    .scrollButtonRight {
+        margin-left: 8px;
+    }
+}
+
+.scrollContainer {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    flex: 1;
+    min-width: 0;
+    scrollbar-width: none;
+
+    > * {
+        flex-shrink: 0;
+    }
+}
+
+.scrollContainer::-webkit-scrollbar {
+    display: none;
+}
