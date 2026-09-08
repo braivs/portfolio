@@ -63,8 +63,8 @@
 
 @media only screen and (max-width: 600px) { // 350px - 600px
     .skill {
+        // no fixed height: two-line titles like "React Hook Form" were clipped
         width: 93px;
-        height: 100px;
         padding: 15px;
         font-size: 13px;
         @include flex(column, space-between, center, nowrap);
