@@ -1,7 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import s from './Skills.module.scss'
 import {Skill} from "./skill/Skill"
-import BrightCarousel from '../../../common/components/BrightCarousel/BrightCarousel'
+import BrightCarousel, {CarouselDirection} from '../../../common/components/BrightCarousel/BrightCarousel'
 import {v1} from "uuid"
 import {Title} from "../../../common/components/title/Title"
 import logoReact from '../../../assets/image/logosColor/react.png'
@@ -91,6 +91,8 @@ const toolsSmooth = {active: true, direction: 'left' as const}
 const carouselSpeed = 1
 
 export function Skills() {
+    const [skillsDirection, setSkillsDirection] = useState<CarouselDirection>(skillsSmooth.direction)
+
     return (
         <div className={s.skillsBlock} id={'skills'}>
             <Fade>
@@ -107,6 +109,7 @@ export function Skills() {
                                 floatingControls
                                 interval={carouselSpeed}
                                 smooth={skillsSmooth}
+                                onControlClick={(direction: CarouselDirection) => setSkillsDirection(direction)}
                             />
                         </div>
                     </div>
@@ -122,6 +125,7 @@ export function Skills() {
                                 floatingControls
                                 interval={carouselSpeed}
                                 smooth={toolsSmooth}
+                                takeoverDirection={skillsDirection}
                             />
                         </div>
                     </div>

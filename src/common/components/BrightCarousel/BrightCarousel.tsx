@@ -4,34 +4,34 @@ import styles from './BrightCarousel.module.scss'
 import clsx from 'clsx'
 import {ScrollButton} from '../ScrollButton/ScrollButton'
 
-type Props = {
+export type CarouselDirection = 'left' | 'right'
+
+export type BrightCarouselProps = {
     elements: React.ReactNode[]
     isControlHidden?: boolean
-    /**
-     * Overlay arrows on the track instead of sitting in the flex row beside it.
-     *
-     * On the platform the buttons are inline and eat track width.
-     * Here the track is full-viewport, but controls should stay on the edges
-     * of the old content column (centered 80% container).
-     * Leave the flag off to keep the original inline layout.
-     */
+    // Overlay arrows on the track at the 80% column edges. Default stays inline like the platform.
     floatingControls?: boolean
     interval?: number
     smooth?: {
         active: boolean
-        direction: 'left' | 'right'
+        direction: CarouselDirection
     }
     className?: string
+    onControlClick?: (direction: CarouselDirection) => void
+    // First manual click pages this way, so a reverse-auto track matches the lead carousel.
+    takeoverDirection?: CarouselDirection
 }
 
-const BrightCarousel: React.FC<Props> = ({
+export default function BrightCarousel({
     elements,
     isControlHidden = false,
     floatingControls = false,
     interval,
     smooth,
     className,
-}) => {
+    onControlClick,
+    takeoverDirection,
+}: BrightCarouselProps) {
     const [isManual, setIsManual] = useState(false)
     const {scrollRef, scroll, startSmoothScroll, stopSmoothScroll} = useCarouselScroll(
         smooth?.active,
@@ -62,13 +62,16 @@ const BrightCarousel: React.FC<Props> = ({
         }
     }, [interval, isManual, scroll, smooth?.active, startSmoothScroll, stopSmoothScroll])
 
-    const handleControlClick = useCallback((direction: 'left' | 'right') => {
+    const handleControlClick = useCallback((direction: CarouselDirection) => {
+        onControlClick?.(direction)
         if (!isManual) {
             setIsManual(true)
             stopSmoothScroll()
+            scroll(takeoverDirection ?? direction)
+            return
         }
         scroll(direction)
-    }, [isManual, scroll, stopSmoothScroll])
+    }, [isManual, onControlClick, scroll, stopSmoothScroll, takeoverDirection])
 
     const showControls = !isControlHidden || floatingControls
 
@@ -98,5 +101,3 @@ const BrightCarousel: React.FC<Props> = ({
         </div>
     )
 }
-
-export default BrightCarousel
