@@ -9,7 +9,7 @@
 
     .burgerNavItems {
         position: absolute;
-        background-color: $primaryColor;
+        background-color: $primarySurfaceColor;
         right: 0;
         top: 0;
         left: 0;
@@ -26,13 +26,13 @@
             cursor: pointer;
 
             &:hover {
-                color: $bgSecondColor;
+                color: $navActiveColor;
             }
         }
 
 
         .active {
-            color: $bgSecondColor;
+            color: $navActiveColor;
         }
     }
 

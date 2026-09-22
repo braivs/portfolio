@@ -1,8 +1,19 @@
-$textColor: #212529;
-$primaryColor: #f5df4e;
-$bgColor: #F8F9FA;
-$bgSecondColor: #fff;
-$accentColor: #f0d900;
+$textColor: var(--text-color);
+$primaryColor: var(--primary-color);
+$primarySurfaceColor: var(--primary-surface-color);
+$bgColor: var(--bg-color);
+$bgSecondColor: var(--bg-second-color);
+$accentColor: var(--accent-color);
+$mutedTextColor: var(--muted-text-color);
+$navActiveColor: var(--nav-active-color);
+$buttonTextColor: var(--button-text-color);
+$borderColor: var(--border-color);
+$petColor: var(--pet-color);
+$commercialColor: var(--commercial-color);
+$skeletonColor: var(--skeleton-color);
+$inverseTitleLineColor: var(--inverse-title-line-color);
+$portraitBorderColor: var(--portrait-border-color);
+$cvBackgroundColor: var(--cv-background-color);
 
 $titleFontFamily: 'Poppins', sans-serif;
 $textFontFamily: 'Poppins', sans-serif;

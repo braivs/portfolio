@@ -1,16 +1,18 @@
-import React, {useCallback} from 'react'
+import React, {useCallback, useMemo} from 'react'
 import s from './Main.module.scss'
 import photo from '../../../assets/image/myPhotoThai.jpg'
-import ReactTypingEffect from "react-typing-effect"
 import {Fade} from "react-awesome-reveal"
 import Tilt from 'react-parallax-tilt'
-import {particlesFirstConfig} from "./particlesConfigs/particlesFirstConfig"
+import {getParticlesFirstConfig} from "./particlesConfigs/particlesFirstConfig"
 import Particles from "react-tsparticles"
 import type {Engine} from "tsparticles-engine"
 import {loadFull} from "tsparticles"
 import {NavLink} from "react-router-dom"
+import {useTheme} from "../../../common/theme/ThemeContext"
 
 export function Main() {
+    const {theme} = useTheme()
+    const particlesConfig = useMemo(() => getParticlesFirstConfig(theme === 'dark'), [theme])
 
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine);
@@ -18,7 +20,13 @@ export function Main() {
 
     return (
         <div className={s.main} id={'main'}>
-            <Particles id="tsparticles" init={particlesInit} options={particlesFirstConfig} height={'100vh'}/>
+            <Particles
+                key={theme}
+                id="tsparticles"
+                init={particlesInit}
+                options={particlesConfig}
+                height={'100vh'}
+            />
             <div className={s.mainBlock}>
                 <Fade>
                     <div className={s.text}>

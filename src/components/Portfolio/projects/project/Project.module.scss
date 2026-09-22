@@ -50,15 +50,15 @@
         }
 
         .pet {
-            color: #0E63FF;
+            color: $petColor;
         }
 
         .commercial {
-            color: #1a7f37;
+            color: $commercialColor;
         }
 
         .skeleton {
-            color: #888;
+            color: $skeletonColor;
         }
 
         .projectTitle {

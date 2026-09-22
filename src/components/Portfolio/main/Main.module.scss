@@ -3,7 +3,7 @@
 
 .main {
     height: 100vh;
-    background-color: $primaryColor;
+    background-color: $primarySurfaceColor;
     position: relative;
 
     .particles {
@@ -43,7 +43,8 @@
                 height: 150px;
                 border-radius: 50%;
                 //border: 15px solid white;
-                background-color: white;
+                background-color: $cvBackgroundColor;
+                color: $buttonTextColor;
                 transition: 0.2s;
                 display: flex;
                 align-items: center;
@@ -55,6 +56,8 @@
 
                 &:hover {
                     border: 10px solid $primaryColor;
+                    background-color: $bgSecondColor;
+                    color: $textColor;
 
                 }
             }
@@ -64,8 +67,8 @@
                 img {
                     width: 400px;
                     border-radius: 50%;
-                    border: 15px solid white;
-                    background-color: white;
+                    border: 15px solid $portraitBorderColor;
+                    background-color: $bgSecondColor;
 
                 }
             }

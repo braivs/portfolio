@@ -1,0 +1,38 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
+
+.themeToggle {
+    @include flex(row, center, center, nowrap);
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    margin-left: 28px;
+    border: 1px solid $navActiveColor;
+    border-radius: 50%;
+    background-color: transparent;
+    color: $textColor;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: $primaryColor;
+        color: $buttonTextColor;
+        transform: rotate(12deg);
+    }
+
+    &:focus-visible {
+        outline: 2px solid $navActiveColor;
+        outline-offset: 3px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .themeToggle {
+        position: absolute;
+        top: 20px;
+        right: 70px;
+        z-index: 3;
+        margin-left: 0;
+    }
+}

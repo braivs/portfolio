@@ -1,3 +1,5 @@
+@import '../../../../common/styles/sass/variables';
+
 .contactItem {
     margin-left: 8px;
     margin-right: 8px;
@@ -5,7 +7,7 @@
     height: 43px;
     .contactStyle {
         display: block;
-        color: #4e555a;
+        color: $textColor;
         transition: 0.2s;
         font-size: 40px;
 

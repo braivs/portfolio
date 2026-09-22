@@ -14,13 +14,13 @@
         font-size: 20px;
 
         &:hover {
-            color: $bgSecondColor;
+            color: $navActiveColor;
         }
 
 
     }
     .active {
-        color: $bgSecondColor;
+        color: $navActiveColor;
     }
     @media screen and (max-width: 600px) {
         display: none;

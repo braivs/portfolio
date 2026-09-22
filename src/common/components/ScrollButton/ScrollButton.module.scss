@@ -15,11 +15,13 @@
 
     &:hover {
         background: $primaryColor;
+        color: $buttonTextColor;
         box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
     }
 
     &:active {
         background: $accentColor;
+        color: $buttonTextColor;
     }
 }
 

@@ -6,17 +6,20 @@ import {Projects} from "./projects/Projects"
 import {Contacts} from "./contacts/Contacts"
 import {Footer} from "./footer/Footer"
 import {ScrollToTop} from "../../common/components/scrollToTop/ScrollToTop"
+import {ThemeProvider} from "../../common/theme/ThemeContext"
 
 export const Portfolio = () => {
   return (
-    <div>
-      <Header />
-      <Main />
-      <Skills />
-      <Projects />
-      <Contacts />
-      <Footer />
-      <ScrollToTop />
-    </div>
+    <ThemeProvider>
+      <div>
+        <Header />
+        <Main />
+        <Skills />
+        <Projects />
+        <Contacts />
+        <Footer />
+        <ScrollToTop />
+      </div>
+    </ThemeProvider>
   )
 }
