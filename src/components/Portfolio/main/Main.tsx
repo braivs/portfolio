@@ -1,4 +1,4 @@
-import React, {useCallback, useMemo} from 'react'
+import React, {useCallback, useMemo, useState} from 'react'
 import s from './Main.module.scss'
 import photo from '../../../assets/image/myPhotoThai.jpg'
 import {Fade} from "react-awesome-reveal"
@@ -6,24 +6,27 @@ import Tilt from 'react-parallax-tilt'
 import {getParticlesFirstConfig} from "./particlesConfigs/particlesFirstConfig"
 import Particles from "react-tsparticles"
 import type {Engine} from "tsparticles-engine"
-import {loadFull} from "tsparticles"
+import {loadSlim} from "tsparticles-slim"
 import {NavLink} from "react-router-dom"
 import {useTheme} from "../../../common/theme/ThemeContext"
+import {clsx} from "clsx"
 
 export function Main() {
     const {theme} = useTheme()
+    const [particlesLoaded, setParticlesLoaded] = useState(false)
     const particlesConfig = useMemo(() => getParticlesFirstConfig(theme === 'dark'), [theme])
 
     const particlesInit = useCallback(async (engine: Engine) => {
-        await loadFull(engine);
+        await loadSlim(engine);
     }, []);
 
     return (
         <div className={s.main} id={'main'}>
             <Particles
-                key={theme}
                 id="tsparticles"
+                className={clsx(s.particles, particlesLoaded && s.particlesVisible)}
                 init={particlesInit}
+                loaded={async () => setParticlesLoaded(true)}
                 options={particlesConfig}
                 height={'100vh'}
             />

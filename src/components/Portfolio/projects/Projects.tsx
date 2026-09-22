@@ -18,7 +18,6 @@ import carsBodyPartsImg from '../../../assets/image/sitesClassic/carsBodyParts.j
 import BlitzImg from '../../../assets/image/sitesClassic/Blitz.jpg'
 import CounselImg from '../../../assets/image/sitesClassic/Counsel.jpg'
 import CooperImg from '../../../assets/image/sitesClassic/Cooper.jpg'
-import NamazonNewDesign from '../../../assets/image/sitesSPA/namazonNewDesign.jpg'
 import zenexhub from '../../../assets/image/sitesSPA/zenexhub.jpg'
 import zenexcoin from '../../../assets/image/sitesSPA/zenexcoin.jpg'
 import treasurehunt from '../../../assets/image/sitesSPA/treasurehunt.jpg'

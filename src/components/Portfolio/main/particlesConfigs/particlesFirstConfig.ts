@@ -6,6 +6,9 @@ export const getParticlesFirstConfig = (isDark: boolean) => {
             color: {
                 value: particleColor,
             },
+            opacity: {
+                value: 0.7,
+            },
             number: {
                 value: 100,
                 limit: 200,
@@ -18,7 +21,7 @@ export const getParticlesFirstConfig = (isDark: boolean) => {
                 enable: true,
                 color: particleColor,
                 distance: 100,
-                opacity: 1,
+                opacity: 0.7,
                 width: 1
             },
             move: {
@@ -36,8 +39,8 @@ export const getParticlesFirstConfig = (isDark: boolean) => {
                 }
             },
         },
-        retina_detect: true,
-        fps_limit: 30,
+        retina_detect: false,
+        fps_limit: 60,
         fullScreen: false,
     } as const
 }
