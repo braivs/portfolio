@@ -56,9 +56,7 @@
                 line-height: 1;
 
                 &:hover {
-                    border: 10px solid $primaryColor;
-                    background-color: $bgSecondColor;
-                    color: $textColor;
+                    border: 10px solid $cvHoverBorderColor;
 
                 }
             }

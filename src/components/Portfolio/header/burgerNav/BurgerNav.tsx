@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import s from './BurgerNav.module.scss';
 import {Link} from "react-scroll";
-import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import close from '../../../../assets/image/close.png'
 
 export function BurgerNav() {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
@@ -25,7 +24,7 @@ export function BurgerNav() {
             </div>
             {
                 menuIsOpen
-                    ? <img src={close} alt="" className={s.burgerBtn} onClick={onBurgerBtnClick}/>
+                    ? <FontAwesomeIcon icon={faXmark} className={s.burgerBtn} onClick={onBurgerBtnClick}/>
                     : <FontAwesomeIcon icon={faBars} className={s.burgerBtn} onClick={onBurgerBtnClick}/>
             }
         </div>
