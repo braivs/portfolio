@@ -9,10 +9,10 @@ export const getParticlesFirstConfig = (isDark: boolean) => {
             number: {
                 value: 100,
                 limit: 200,
-                /*density: {
+                density: {
                     enable: true,
-                    value_area: 800
-                }*/
+                    area: 800
+                }
             },
             line_linked: {
                 enable: true,

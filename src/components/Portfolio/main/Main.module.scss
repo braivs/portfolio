@@ -5,6 +5,7 @@
     height: 100vh;
     background-color: $primarySurfaceColor;
     position: relative;
+    overflow: hidden;
 
     .particles {
         opacity: 0.7;
