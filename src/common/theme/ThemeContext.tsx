@@ -1,4 +1,4 @@
-import React, {createContext, ReactNode, useContext, useEffect, useState} from 'react'
+import React, {createContext, ReactNode, useContext, useLayoutEffect, useState} from 'react'
 
 export type Theme = 'light' | 'dark'
 
@@ -8,20 +8,31 @@ type ThemeContextValue = {
 }
 
 const ThemeContext = createContext<ThemeContextValue | null>(null)
+const THEME_STORAGE_KEY = 'theme'
 
 const getInitialTheme = (): Theme => {
+    const savedTheme = sessionStorage.getItem(THEME_STORAGE_KEY)
+
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+        return savedTheme
+    }
+
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 }
 
 export const ThemeProvider = ({children}: {children: ReactNode}) => {
     const [theme, setTheme] = useState<Theme>(getInitialTheme)
 
-    useEffect(() => {
+    // Apply the theme before paint to prevent a flash of the wrong theme.
+    useLayoutEffect(() => {
         document.documentElement.dataset.theme = theme
     }, [theme])
 
     const toggleTheme = () => {
-        setTheme(currentTheme => currentTheme === 'light' ? 'dark' : 'light')
+        const nextTheme = theme === 'light' ? 'dark' : 'light'
+
+        sessionStorage.setItem(THEME_STORAGE_KEY, nextTheme)
+        setTheme(nextTheme)
     }
 
     return (
