@@ -8,9 +8,12 @@
     .contactStyle {
         display: block;
         color: $accentTextColor;
-        transition: 0.2s;
         font-size: 40px;
+        transform-origin: center;
+        transition: transform 0.2s ease;
 
-        &:hover {font-size: 44px;}
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
