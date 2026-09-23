@@ -9,6 +9,7 @@
 
     .particles {
         opacity: 0;
+        pointer-events: none;
         transition: opacity 0.35s ease;
     }
 
@@ -19,6 +20,8 @@
     .mainBlock {
         @include container();
         @include flex(row, space-between, center, nowrap);
+        position: relative;
+        z-index: 1;
 
         .text {
             min-width: 50%;
