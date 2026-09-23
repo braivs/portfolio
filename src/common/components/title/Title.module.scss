@@ -25,6 +25,8 @@
 }
 
 .titleSecondary {
+    color: $accentTextColor;
+
     &::before {
         background: $inverseTitleLineColor;
     }

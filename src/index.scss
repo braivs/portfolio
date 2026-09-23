@@ -19,6 +19,7 @@
   --portrait-border-color: #fff;
   --cv-background-color: #fff;
   --cv-hover-border-color: #f5df4e;
+  --accent-text-color: #212529;
 }
 
 :root[data-theme='dark'] {
@@ -37,6 +38,7 @@
   --portrait-border-color: #f5df4e;
   --cv-background-color: #f5df4e;
   --cv-hover-border-color: #18162a;
+  --accent-text-color: #f5df4e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,6 +58,7 @@
     --portrait-border-color: #f5df4e;
     --cv-background-color: #f5df4e;
     --cv-hover-border-color: #18162a;
+    --accent-text-color: #f5df4e;
   }
 }
 
