@@ -1,4 +1,5 @@
 @import './common/styles/sass/variables';
+@import './common/styles/sass/theme';
 
 :root {
   color-scheme: light;
@@ -22,43 +23,16 @@
   --accent-text-color: #212529;
 }
 
+// Dark theme after JS has set data-theme on <html>.
 :root[data-theme='dark'] {
-  color-scheme: dark;
-  --text-color: #eceaf5;
-  --primary-surface-color: #201e34;
-  --bg-color: #0f0e1a;
-  --bg-second-color: #18162a;
-  --muted-text-color: rgba(255, 255, 255, 0.55);
-  --nav-active-color: #f5df4e;
-  --border-color: rgba(255, 255, 255, 0.2);
-  --pet-color: #6ea8ff;
-  --commercial-color: #58c77a;
-  --skeleton-color: #aaa;
-  --inverse-title-line-color: #f5df4e;
-  --portrait-border-color: #f5df4e;
-  --cv-background-color: #f5df4e;
-  --cv-hover-border-color: #18162a;
-  --accent-text-color: #f5df4e;
+  @include dark-theme-tokens;
 }
 
+// Dark theme before JS runs, if the OS is in dark mode.
+// Skip this if data-theme is already set, so a manual light theme stays light.
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    color-scheme: dark;
-    --text-color: #eceaf5;
-    --primary-surface-color: #201e34;
-    --bg-color: #0f0e1a;
-    --bg-second-color: #18162a;
-    --muted-text-color: rgba(255, 255, 255, 0.55);
-    --nav-active-color: #f5df4e;
-    --border-color: rgba(255, 255, 255, 0.2);
-    --pet-color: #6ea8ff;
-    --commercial-color: #58c77a;
-    --skeleton-color: #aaa;
-    --inverse-title-line-color: #f5df4e;
-    --portrait-border-color: #f5df4e;
-    --cv-background-color: #f5df4e;
-    --cv-hover-border-color: #18162a;
-    --accent-text-color: #f5df4e;
+    @include dark-theme-tokens;
   }
 }
 
