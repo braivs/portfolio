@@ -52,10 +52,10 @@
                 width: 150px;
                 height: 150px;
                 border-radius: 50%;
-                //border: 15px solid white;
+                border: 0 solid $cvHoverBorderColor;
                 background-color: $cvBackgroundColor;
                 color: $buttonTextColor;
-                transition: 0.2s;
+                transition: border-width 0.2s;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -65,8 +65,7 @@
                 line-height: 1;
 
                 &:hover {
-                    border: 10px solid $cvHoverBorderColor;
-
+                    border-width: 10px;
                 }
             }
             .imgBlock {
