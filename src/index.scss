@@ -25,14 +25,14 @@
 
 // Dark theme after JS has set data-theme on <html>.
 :root[data-theme='dark'] {
-  @include dark-theme-tokens;
+  @include dark-theme;
 }
 
 // Dark theme before JS runs, if the OS is in dark mode.
 // Skip this if data-theme is already set, so a manual light theme stays light.
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    @include dark-theme-tokens;
+    @include dark-theme;
   }
 }
 
