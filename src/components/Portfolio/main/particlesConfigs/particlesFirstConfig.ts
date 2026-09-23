@@ -17,7 +17,7 @@ export const getParticlesFirstConfig = (isDark: boolean) => {
                     area: 800
                 }
             },
-            line_linked: {
+            links: {
                 enable: true,
                 color: particleColor,
                 distance: 100,
@@ -30,8 +30,9 @@ export const getParticlesFirstConfig = (isDark: boolean) => {
                 direction: "none",
                 random: false,
                 straight: false,
-                out_mode: "out",
-                bounce: false,
+                outModes: {
+                    default: "bounce",
+                },
                 attract: {
                     enable: false,
                     rotateX: 600,
@@ -39,8 +40,10 @@ export const getParticlesFirstConfig = (isDark: boolean) => {
                 }
             },
         },
-        retina_detect: false,
-        fps_limit: 60,
-        fullScreen: false,
+        detectRetina: true,
+        fpsLimit: 60,
+        fullScreen: {
+            enable: false,
+        },
     } as const
 }
